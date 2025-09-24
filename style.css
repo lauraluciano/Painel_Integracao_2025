@@ -1,0 +1,181 @@
+/*---geral---*/
+
+body {
+    background: #FFF2EF;
+  
+}
+
+p {
+    font-family: "Rubik", sans-serif;
+    color: #235158;
+    font-size: 2rem;
+}
+
+div.h2 {
+    background: #235158;
+    border-radius: 100px;
+    margin: 1vw auto;
+    width: 20vw;
+    padding: 1vw;
+}
+
+h2 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #FFF2EF;
+    font-size: 2rem;
+}
+
+/*---header---*/
+header {
+    background: #AAD7D9;
+ 
+}
+
+header img {
+      margin: 20px 0 20px 0;
+}
+
+header img {
+    text-align: center;
+}
+
+/*---introducao---*/
+section.introducao {
+    background: #AAD7D9;
+    padding: 2vw;
+    border: 2.5px solid#5D688A;
+    
+}
+
+section.introducao h1 {
+    font-family: "Prata", serif;
+    color: #235158;
+    font-size: 4.5rem;
+    text-align: right;
+    margin: 2vw 4vw 0 0;
+}
+
+section.introducao p {
+    font-family: "Rubik", sans-serif;
+    color: #235158;
+    font-size: 2rem;
+    text-align: right;
+      margin: 2vw;
+}
+
+/*---conteudo---*/
+section.conteudo {
+    padding: 2vw;
+}
+
+section.conteudo h2 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 2rem;
+}
+
+div.conteudo {
+    background: none;
+    border: 2.5px solid #235158;
+    padding: 2vw;
+    max-width: 50vw;
+    margin: auto;
+}
+
+div.conteudo p {
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+}
+
+div.conteudo ul {
+    display: flex;
+  
+} 
+div.conteudo ul li {
+      margin: 2vw;
+}
+
+
+
+/*barreira hemato */
+
+.barreirahema {
+    background-color: #F0EDE2;
+}
+
+.barreirahema P {
+    font-size: 25px;
+    margin: 0 4vw 4vw 4vw;
+}
+
+div.textocerebro p{
+    font-size: 25px;
+    margin: 4vw 4vw 0 4vw;
+}
+
+        div.textocerebro img {
+            margin: 4vw;
+          padding: 20px 30px 0 0;
+        }
+
+div.textocerebro {
+    display: flex;
+}
+
+
+
+/*estrutura cerebro*/
+
+.estruturacerebro {
+    background-color: #AAD7D9;
+}
+
+.estruturacerebro h2 {
+    border-radius: 25px;
+    padding: 20px 10px 20px 10px;
+    background-color: white;
+    color: #92C7CF;
+    font-size: 3rem;
+}
+
+.estruturacerebro p {
+font-size: 25px;
+    margin: 4vw 4vw 4vw 4vw;
+    text-align: center;
+    }
+
+   .estruturacerebro div.cerebrofinal ul {
+    display: flex;
+    margin: 4vw 4vw 4vw 4vw;
+   } 
+
+   .estruturacerebro div.cerebrofinal ul li p {
+    font-size: 25px;
+    margin: 4vw 4vw 4vw 4vw;
+    text-align: center;
+   }
+
+   /*neurotransmissores*/
+
+
+   .neurotrans h2 {
+    font-size: 3rem;
+    border-radius: 25px;
+    padding: 20px 10px 20px 10px;
+    background-color: #92C7CF;
+    color: white;
+   }
+
+        .neurotrans p {
+             font-size: 25px;
+    margin: 4vw 4vw 4vw 4vw;
+    text-align: left;
+        }
+
+
+        .neurotrans div.tiponeuro ul {
+            display: flex;
+        }
