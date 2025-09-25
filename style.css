@@ -2,7 +2,7 @@
 
 body {
     background: #FFF2EF;
-  
+
 }
 
 p {
@@ -11,13 +11,13 @@ p {
     font-size: 2rem;
 }
 
-div h2{
+div h2 {
     background: #AAD7D9;
     border-radius: 25px;
     margin: 1vw auto;
     width: 20vw;
     padding: 1.5vw 4vw;
-    
+
 }
 
 h2 {
@@ -31,11 +31,11 @@ h2 {
 /*---header---*/
 header {
     background: #AAD7D9;
- 
+
 }
 
 header img {
-      margin: 20px 0 20px 0;
+    margin: 20px 0 20px 0;
 }
 
 header img {
@@ -58,10 +58,12 @@ section.introducao h1 {
     text-align: left;
     margin: 2vw 4vw 0 0;
 }
+
 .introducao img {
     width: 30%;
     margin: 0 0 0 10vw;
 }
+
 section.introducao p {
     font-family: "Rubik", sans-serif;
     color: #235158;
@@ -101,11 +103,13 @@ div.conteudo p {
 
 div.conteudo ul {
     display: flex;
-    margin: 4vw 15vw;
-  
-} 
+    margin: 4vw 10vw;
+    list-style-type: none;
+
+}
+
 div.conteudo ul li {
-      margin: 2vw;
+    margin: 2vw;
 }
 
 
@@ -119,25 +123,26 @@ div.conteudo ul li {
 
 .barreirahema P {
     font-size: 2rem;
-    margin: 0 19vw 4vw 19vw;
+    margin: 0 19vw 4vw 17vw;
     line-height: 45px;
 }
 
-div.textocerebro p{
+div.textocerebro p {
     font-size: 2rem;
-    margin: 4vw 0 0 19vw;
+    margin: 4vw 0 0 17vw;
     line-height: 45px;
+    max-width: 800px;
 }
 
-        div.textocerebro img {
-            margin: 2vw 17vw 0 0;
-          padding: 20px 30px 0 0;
-        }
+div.textocerebro img {
+    margin: 2vw 17vw 0 0;
+    padding: 20px 30px 0 0;
+    width: 40%;
+}
 
 div.textocerebro {
     display: flex;
 }
-
 
 
 /*estrutura cerebro*/
@@ -156,55 +161,85 @@ div.textocerebro {
     margin: 0 35vw;
 }
 
-.estruturacerebro p {
-font-size: 2rem;
+.estruturacerebro p.centro {
+    font-size: 2rem;
     margin: 4vw 15vw;
     text-align: center;
-    }
-    .sketchfab-embed-wrapper p {
-        width: 60%;
-    }
+}
 
-   .estruturacerebro div.cerebrofinal {
+.sketchfab-embed-wrapper  {
+    margin: 0 0 0 18vw;
+}
+
+.estruturacerebro div.cerebrofinal {
     display: flex;
-   } 
-   p.rebelde {
-    margin: 2vw 0 0 10vw;
-   }
-   p.norm {
+}
+
+p.norm {
     font-size: 2rem;
-    margin: 0 10vw 2vw 0;
-    text-align: center;
-   }
-   .estruturacerebro ul {
+    margin: 0 0 2vw 10vw;
+    max-width: 900px;
+}
+
+.estruturacerebro ul {
     margin: 0 0 0 12vw;
-   }
-   .estruturacerebro li {
+}
+.cerebrofinal {
+    padding: 3vw 0 1vw 0;
+}
+iframe {
+    width: 120%;
+    height: 80%;
+}
+.estruturacerebro li {
     font-size: 2rem;
     color: #235158;
     list-style-type: disc;
-   }
-   .texto {
+}
+
+.texto {
     margin: 0 0 5vw 0;
-   }
-   /*neurotransmissores*/
+}
 
+/*neurotransmissores*/
 
-   .neurotrans h2 {
-    font-size: 3rem;
+.neurotrans {
+    padding: 2vw;
+}
+
+.neurotrans h2 {
+    font-size: 2.5rem;
     border-radius: 25px;
-    padding: 20px 10px 20px 10px;
+    padding: 20px 0;
     background-color: #92C7CF;
     color: white;
-   }
+    margin: 0 35vw;
+}
 
-        .neurotrans p {
-             font-size: 25px;
-    margin: 4vw 4vw 4vw 4vw;
+.neurotrans div.textoNeuro {
+    margin: 4vw 15vw;
+}
+.neurotrans p {
+    font-size: 2rem;
     text-align: left;
-        }
+}
 
-
-        .neurotrans div.tiponeuro ul {
-            display: flex;
-        }
+.neurotrans div.tiponeuro ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 12vw;
+}
+.neurotrans h3 {
+    font-size: 3rem;
+    text-align: center;
+    color: #235158;
+    border-bottom: 1px solid #235158;
+}
+.tiponeuro li {
+    background-color: #F0EDE2;
+    border: 2.5px solid#235158;
+    list-style-type: none;
+    border-radius: 20px;
+    margin: 0 2vw;
+    padding: 0 1vw 1vw 1vw;
+}
