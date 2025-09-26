@@ -1,4 +1,5 @@
 // textos.js
+
 // 1. Dicionário com os textos de cada parte do cérebro
 const dados = {
   frontal: {
@@ -19,12 +20,11 @@ const dados = {
   }
 };
 
-// 2. Função que atualiza o conteúdo na tela
+// 2. Atualiza o conteúdo da tela com base na parte clicada
 function atualizarInfo(id) {
-  const parte = dados[id]; // pega o objeto correspondente (ex: frontal, temporal...)
+  const parte = dados[id];
 
   if (parte) {
-    // Atualiza título e texto no HTML
     document.getElementById("titulo").innerText = parte.titulo;
     document.getElementById("texto").innerText = parte.texto;
   } else {
@@ -32,22 +32,50 @@ function atualizarInfo(id) {
   }
 }
 
-// 3. Inicialização: adiciona os "cliques" nas áreas
+// 3. Inicializa os cliques nas áreas do SVG
 function inicializarMapa() {
   console.log("Script carregado");
 
-  // Seleciona todas as áreas clicáveis do SVG
   const areas = document.querySelectorAll(".area");
   console.log("Áreas encontradas:", areas.length);
 
-  // Para cada área, adiciona um "ouvinte de clique"
   areas.forEach(el => {
     el.addEventListener("click", () => {
       console.log(`Clique em ${el.id}`);
-      atualizarInfo(el.id); // chama a função que mostra os textos
+      atualizarInfo(el.id);
     });
   });
 }
 
-// 4. Executa a inicialização quando a página estiver pronta
-document.addEventListener("DOMContentLoaded", inicializarMapa);
+// 4. Tudo acontece quando o DOM estiver carregado
+document.addEventListener("DOMContentLoaded", function () {
+  inicializarMapa(); // Inicializa os cliques no SVG
+
+  const partsToToggle = [
+    { buttonId: "toggleLoboFrontal", elementId: "frontal", className: "toggledFrontal" },
+    { buttonId: "toggleLoboParietal", elementId: "parietal", className: "toggledParietal" },
+    { buttonId: "toggleLoboTemporal", elementId: "temporal", className: "toggledTemporal" },
+    { buttonId: "toggleLoboOccipital", elementId: "occipital", className: "toggledOccipital" }
+  ];
+
+  partsToToggle.forEach(part => {
+    const button = document.getElementById(part.buttonId);
+    const svgPart = document.getElementById(part.elementId);
+
+    if (button && svgPart) {
+      button.addEventListener("click", function () {
+        const isActive = svgPart.classList.toggle(part.className);
+
+        if (isActive) {
+          atualizarInfo(part.elementId); // Mostrar texto
+        } else {
+          // Limpar conteúdo
+          document.getElementById("titulo").innerText = "Clique em uma parte do cérebro";
+          document.getElementById("texto").innerText = "O texto aparecerá aqui.";
+        }
+      });
+    } else {
+      console.warn(`Elemento não encontrado: botão=${part.buttonId}, svg=${part.elementId}`);
+    }
+  });
+});
