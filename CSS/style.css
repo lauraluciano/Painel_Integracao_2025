@@ -22,7 +22,6 @@ div h2 {
 
 h2 {
     font-family: "Palanquin Dark", sans-serif;
-    font-weight: 500;
     text-align: center;
     color: #FFF2EF;
     font-size: 2rem;
@@ -211,7 +210,7 @@ div.textocerebro {
 }
 
 .sketchfab-embed-wrapper {
-    margin: 0 0 0 18vw;
+    margin: 0 0 0 14vw;
 }
 
 .estruturacerebro div.cerebrofinal {
@@ -231,12 +230,12 @@ p.norm {
 }
 
 .cerebrofinal {
-    padding: 3vw 0 1vw 0;
+    padding: 0 7vw 5vw 0;
 }
 
 iframe {
-    width: 120%;
-    height: 80%;
+    width: 160%;
+    height: 120%;
 }
 
 .estruturacerebro li {
@@ -261,7 +260,7 @@ iframe {
     padding: 20px 0;
     background-color: #92C7CF;
     color: white;
-    margin: 0 35vw;
+    margin: 0 30vw;
     font-family: "Palanquin Dark", sans-serif;
 }
 
@@ -343,4 +342,39 @@ footer a span:hover {
     transition: .2s;
     transform: scale(0.9);
     cursor: pointer;
+}
+.cadaneuro {
+    background-color: #F0EDE2;
+    padding: 2vw;
+}
+.cadaneuro h2 {
+    color: #235158;
+    font-family: "Palanquin Dark", sans-serif;
+    font-size: 2.5rem;
+    border-bottom: 2px solid #235158;
+    display: inline-block;
+    margin: 0 0 0 33vw;
+}
+.umTres {
+    display: flex;
+    justify-content: space-between;
+}
+.quatroSeis {
+    display: flex;
+    justify-content: space-between;
+}
+.seteNove {
+    display: flex;
+    justify-content: space-between;
+}
+.neuros {
+    background-color: #92C7CF;
+    border-radius: 20px;
+    margin: 2vw;
+}
+.neuros h3{
+    font-family: "Palanquin Dark", sans-serif;
+    color: #235158;
+    font-size: 1.5rem;
+    text-align: center;
 }
