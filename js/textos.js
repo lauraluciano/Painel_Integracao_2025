@@ -70,8 +70,8 @@ document.addEventListener("DOMContentLoaded", function () {
           atualizarInfo(part.elementId); // Mostrar texto
         } else {
           // Limpar conteúdo
-          document.getElementById("titulo").innerText = "Clique em uma parte do cérebro";
-          document.getElementById("texto").innerText = "O texto aparecerá aqui.";
+          document.getElementById("titulo").innerText = "";
+          document.getElementById("texto").innerText = "";
         }
       });
     } else {
