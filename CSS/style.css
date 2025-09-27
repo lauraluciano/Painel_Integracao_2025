@@ -66,10 +66,37 @@ h2 {
 /*=================SVG CEREBRO DPS MUDAR DE POSIÇÃO===================*/
 
 /*---header---*/
-header {
+header nav {
     background: #AAD7D9;
-
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 8vw;
+    align-items: center;
 }
+
+header ul {
+    display: flex;
+    gap: 2vw;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-family: "Baloo 2", sans-serif;
+    color: #235158;
+    font-size: 2rem;
+    background: #F0EDE2;
+    padding: 10px 35px;
+    border-radius: 50px;
+    border: 2px solid #235158;
+    display: inline-block;     
+}
+
+header ul li a:hover {
+transition: .2s;
+transform: scale(0.9);
+font-weight: bold;
+}
+
 
 header img {
     margin: 20px 0 20px 0;
@@ -97,8 +124,9 @@ section.introducao h1 {
 }
 
 .introducao img {
-    width: 30%;
+    width: 23%;
     margin: 0 0 0 10vw;
+    opacity: 90%;
 }
 
 section.introducao p {
@@ -120,6 +148,7 @@ section.conteudo h2 {
     font-weight: 500;
     text-align: center;
     font-size: 2rem;
+    padding: 30px 0;
 }
 
 div.conteudo li {
@@ -174,10 +203,14 @@ div.textocerebro p {
     font-family: "Baloo 2", sans-serif;
 }
 
+div.textocerebro {
+    align-items: center;
+}
+
 div.textocerebro img {
-    margin: 2vw 17vw 0 0;
-    padding: 20px 30px 0 0;
-    width: 40%;
+    width: 19%;
+    border-radius: 50px;
+    margin: 2vw 0 0 2vw;
 }
 
 div.textocerebro {
@@ -194,7 +227,7 @@ div.textocerebro {
 
 .estruturacerebro h2 {
     border-radius: 25px;
-    padding: 20px 0;
+    padding: 30px 0;
     background-color: #F0EDE2;
     color: #92C7CF;
     font-size: 2.5rem;
@@ -257,7 +290,7 @@ iframe {
 .neurotrans h2 {
     font-size: 2.5rem;
     border-radius: 25px;
-    padding: 20px 0;
+    padding: 30px 0;
     background-color: #92C7CF;
     color: white;
     margin: 0 30vw;
@@ -298,6 +331,84 @@ iframe {
     border-radius: 20px;
     margin: 0 2vw;
     padding: 0 1vw 1vw 1vw;
+}
+
+/* cada neuro */
+
+.cadaneuro {
+    background-color: #F0EDE2;
+    padding: 2vw;
+    text-align: center;
+}
+
+.cadaneuro h2 {
+    color: #235158;
+    font-family: "Palanquin Dark", sans-serif;
+    font-size: 2.5rem;
+    border-bottom: 2px solid #235158;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+}
+
+.umTres {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.quatroSeis {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.seteNove {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.neuros {
+    background-color: #92C7CF;
+    border-radius: 20px;
+    margin: 2vw;
+    padding: 1vw;
+    width: 10%;
+    max-width: 10%;
+}
+
+.neuros img {
+    width: 8vw;
+    border-radius: 20px;
+}
+
+.neuros h3 {
+    font-family: "Palanquin Dark", sans-serif;
+    color: #235158;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 5px;
+}
+
+.neuros h3:hover {
+    color: #0d2f33;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+.neuros summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.neuros details ul {
+    max-width: 90%;
+    margin: 15px auto;
+    text-align: left;
+    font-size: 1.2rem;
+    font-family: "Baloo 2", sans-serif;
+    color: #0d2f33;
 }
 
 /* ---footer--- */
@@ -342,39 +453,4 @@ footer a span:hover {
     transition: .2s;
     transform: scale(0.9);
     cursor: pointer;
-}
-.cadaneuro {
-    background-color: #F0EDE2;
-    padding: 2vw;
-}
-.cadaneuro h2 {
-    color: #235158;
-    font-family: "Palanquin Dark", sans-serif;
-    font-size: 2.5rem;
-    border-bottom: 2px solid #235158;
-    display: inline-block;
-    margin: 0 0 0 33vw;
-}
-.umTres {
-    display: flex;
-    justify-content: space-between;
-}
-.quatroSeis {
-    display: flex;
-    justify-content: space-between;
-}
-.seteNove {
-    display: flex;
-    justify-content: space-between;
-}
-.neuros {
-    background-color: #92C7CF;
-    border-radius: 20px;
-    margin: 2vw;
-}
-.neuros h3{
-    font-family: "Palanquin Dark", sans-serif;
-    color: #235158;
-    font-size: 1.5rem;
-    text-align: center;
 }
