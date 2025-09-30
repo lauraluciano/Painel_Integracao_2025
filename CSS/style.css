@@ -26,20 +26,37 @@ h2 {
     color: #FFF2EF;
     font-size: 2rem;
 }
-
+.Logo {
+    width: 15%;
+}
 /*=================SVG CEREBRO DPS MUDAR DE POSIÇÃO===================*/
+.bannerCere{
+    background: url(../SRC/bannerCerebro.png);
+    align-items: centerz';
+}
+.bannerCere h1 {
+    text-align: center;
+    font-size: 4rem;
+    color: #A3D7DF;
 
-.container {
-    margin: 4vw 15vw;
+}
+.SVG{
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+    margin: 4vw auto;
 }
 
+.conteudoCere{
+    display: flex;
+}
+.imgDiv1{
+    width: 150%;
+}
 .imgDiv {
-    flex: 1;
-    max-width: 500px;
+    max-width: 100%;
+  width: 100%;
+  text-align: center;
 }
 
 .area {
@@ -48,8 +65,12 @@ h2 {
     fill: transparent;
     cursor: pointer;
 }
-#botoes { 
-	margin-top: 38vw;
+#botoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
 }
 .bot {
     background: #92C7CF;
@@ -60,21 +81,22 @@ h2 {
     color: #12383d;
     cursor: pointer;
 }
-#info {
+#infoC2 , #infoC1 {
     margin-left: 40px;
     flex: 1;
     background: #AAD7D9;
     border: 1px solid #0d2f33;
     border-radius: 20px;
-    padding: 40px;
+    padding: 2vw 2.5vw;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
 }
-#info h1{
+#infoC2, #infoC1 h1{
     font-size: 2.5rem;
     color: #235158;
 }
-#info p {
-    color: #12383d;
+#textoC1, #textoC2 {
+    display: block;
+    border: none;
 }
 .area:hover {
     cursor: pointer;
@@ -82,16 +104,16 @@ h2 {
     /* destaque ao passar o mouse */
     opacity: 0.5;
 }
-#texto ul li:first-child {
+#textoC2 ul li:first-child {
   list-style-type: none;
 }
-#texto ul {
+#textoC2 ul {
   list-style-type: disc !important;     /* Define bolinhas */
   padding-left: 20px !important;        /* Espaço à esquerda para as bolinhas aparecerem */
   margin-top: 10px;
 }
 
-#texto li {
+#textoC2 li {
   margin-bottom: 6px;        /* Espaço entre os itens da lista */
 }
 
@@ -130,14 +152,6 @@ font-weight: bold;
 }
 
 
-header img {
-    margin: 20px 0 20px 0;
-    width: 25%;
-}
-
-header img {
-    text-align: center;
-}
 
 
 /*----------------------CAMINHO----------------------*/
