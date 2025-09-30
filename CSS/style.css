@@ -140,6 +140,84 @@ header img {
     text-align: center;
 }
 
+
+/*----------------------CAMINHO----------------------*/
+
+
+/* Resetando estilos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.neurocaminhos {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f9;
+}
+
+.containercaminho {
+  display: flex;
+  position: relative;  /* Permite a sobreposição absoluta dentro deste contêiner */
+}
+
+.sidebar {
+  margin-right: 20px;
+}
+
+.sidebar button {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sidebar button:hover {
+  background-color: #45a049;
+}
+
+.imagem-cerebro {
+  position: relative; /* Permite a sobreposição da seta */
+}
+
+.base {
+  width: 500px; /* Ajuste o tamanho da imagem do cérebro conforme necessário */
+  height: auto;
+}
+
+.overlay {
+  position: absolute; /* Posição absoluta para sobrepor sobre a imagem do cérebro */
+  top: 0;
+  left: 0;
+  width: 100%;  /* Ajuste o tamanho da seta para cobrir a imagem */
+  height: 100%; /* Ajuste o tamanho da seta */
+  pointer-events: none;  /* Para garantir que os botões possam ser clicados */
+  display: none; /* A seta ficará oculta inicialmente */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*---introducao---*/
 .introducao {
     background: #AAD7D9;
