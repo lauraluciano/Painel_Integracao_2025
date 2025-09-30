@@ -4,19 +4,19 @@
 const dados = {
   frontal: {
     titulo: "Lobo Frontal",
-    texto: "O lobo frontal está relacionado ao raciocínio, planejamento e movimento voluntário."
+    texto: ["Responsável por:", "Iniciar acões voluntárias;", "Controlar habilidades motoras;", "Processos intelectuais (falar, pensar, etc).;", "Expressões faciais e gestos braçais;", "Expressão dos sentimentos;" ]
   },
   parietal: {
     titulo: "Lobo Parietal",
-    texto: "O lobo parietal processa informações sensoriais como tato, temperatura e dor."
+    texto: ["Responsável por:", "Controlar a posição do corpo;", "Converter impressões como peso textura e forma em percepção geral;", "Ajudar na orientação um espaço, seja do corpo inteiro ou de partes esppecíficas." ]
   },
   temporal: {
     titulo: "Lobo Temporal",
-    texto: "O lobo temporal está ligado à audição, memória e compreensão da linguagem."
+    texto: ["Responsável por:", "Processar a visão;", "Preservar memórias;", "Ajuda o lobo pariental na percepção de espaço com a visão;" ]
   },
   occipital: {
     titulo: "Lobo Occipital",
-    texto: "O lobo occipital é responsável pelo processamento das informações visuais."
+    texto: ["Responsável por:", "Gerar lembranças e emoções;", "Guardar e acessar memórias;", "Compreender sons e Imagens e reconhece-los;", ]
   }
 };
 
@@ -25,13 +25,25 @@ function atualizarInfo(id) {
   const parte = dados[id];
 
   if (parte) {
+    // Atualiza o título
     document.getElementById("titulo").innerText = parte.titulo;
-    document.getElementById("texto").innerText = parte.texto;
+
+    // Cria a lista
+    const ul = document.createElement("ul");
+    parte.texto.forEach(frase => {
+      const li = document.createElement("li");
+      li.innerText = frase;
+      ul.appendChild(li);
+    });
+
+    // Adiciona a lista no elemento "texto"
+    const textoEl = document.getElementById("texto");
+    textoEl.innerHTML = ""; // Limpa o conteúdo anterior
+    textoEl.appendChild(ul); // Adiciona a nova lista
   } else {
     console.warn(`Nenhum dado encontrado para id=${id}`);
   }
 }
-
 // 3. Inicializa os cliques nas áreas do SVG
 function inicializarMapa() {
   console.log("Script carregado");

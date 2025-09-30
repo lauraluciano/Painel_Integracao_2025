@@ -83,7 +83,18 @@ h2 {
     /* destaque ao passar o mouse */
     opacity: 0.5;
 }
+#texto ul li:first-child {
+  list-style-type: none;
+}
+#texto ul {
+  list-style-type: disc !important;     /* Define bolinhas */
+  padding-left: 20px !important;        /* Espaço à esquerda para as bolinhas aparecerem */
+  margin-top: 10px;
+}
 
+#texto li {
+  margin-bottom: 6px;        /* Espaço entre os itens da lista */
+}
 
 /*=================SVG CEREBRO DPS MUDAR DE POSIÇÃO===================*/
 
@@ -105,7 +116,7 @@ header ul li a {
     text-decoration: none;
     font-family: "Baloo 2", sans-serif;
     color: #235158;
-    font-size: 2rem;
+    font-size: 1.5rem;
     background: #F0EDE2;
     padding: 10px 35px;
     border-radius: 50px;
@@ -122,6 +133,7 @@ font-weight: bold;
 
 header img {
     margin: 20px 0 20px 0;
+    width: 25%;
 }
 
 header img {
