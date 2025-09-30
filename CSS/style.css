@@ -26,37 +26,44 @@ h2 {
     color: #FFF2EF;
     font-size: 2rem;
 }
+
 .Logo {
     width: 15%;
 }
+
 /*=================SVG CEREBRO DPS MUDAR DE POSIÇÃO===================*/
-.bannerCere{
+.bannerCere {
     background: url(../SRC/bannerCerebro.png);
     align-items: centerz';
+
 }
+
 .bannerCere h1 {
     text-align: center;
     font-size: 4rem;
     color: #A3D7DF;
 
 }
-.SVG{
+
+.SVG {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 4vw auto;
 }
 
-.conteudoCere{
+.conteudoCere {
     display: flex;
 }
-.imgDiv1{
+
+.imgDiv1 {
     width: 150%;
 }
+
 .imgDiv {
     max-width: 100%;
-  width: 100%;
-  text-align: center;
+    width: 100%;
+    text-align: center;
 }
 
 .area {
@@ -65,6 +72,7 @@ h2 {
     fill: transparent;
     cursor: pointer;
 }
+
 #botoes {
     display: flex;
     flex-wrap: wrap;
@@ -72,6 +80,7 @@ h2 {
     gap: 10px;
     margin-top: 20px;
 }
+
 .bot {
     background: #92C7CF;
     border: none;
@@ -81,7 +90,9 @@ h2 {
     color: #12383d;
     cursor: pointer;
 }
-#infoC2 , #infoC1 {
+
+#infoC2,
+#infoC1 {
     margin-left: 40px;
     flex: 1;
     background: #AAD7D9;
@@ -90,31 +101,41 @@ h2 {
     padding: 2vw 2.5vw;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
 }
-#infoC2, #infoC1 h1{
+
+#infoC2,
+#infoC1 h1 {
     font-size: 2.5rem;
     color: #235158;
 }
-#textoC1, #textoC2 {
+
+#textoC1,
+#textoC2 {
     display: block;
     border: none;
 }
+
 .area:hover {
     cursor: pointer;
     fill: #AAD7D9;
     /* destaque ao passar o mouse */
     opacity: 0.5;
 }
+
 #textoC2 ul li:first-child {
-  list-style-type: none;
+    list-style-type: none;
 }
+
 #textoC2 ul {
-  list-style-type: disc !important;     /* Define bolinhas */
-  padding-left: 20px !important;        /* Espaço à esquerda para as bolinhas aparecerem */
-  margin-top: 10px;
+    list-style-type: disc !important;
+    /* Define bolinhas */
+    padding-left: 20px !important;
+    /* Espaço à esquerda para as bolinhas aparecerem */
+    margin-top: 10px;
 }
 
 #textoC2 li {
-  margin-bottom: 6px;        /* Espaço entre os itens da lista */
+    margin-bottom: 6px;
+    /* Espaço entre os itens da lista */
 }
 
 /*=================SVG CEREBRO DPS MUDAR DE POSIÇÃO===================*/
@@ -142,13 +163,13 @@ header ul li a {
     padding: 10px 35px;
     border-radius: 50px;
     border: 2px solid #235158;
-    display: inline-block;     
+    display: inline-block;
 }
 
 header ul li a:hover {
-transition: .2s;
-transform: scale(0.9);
-font-weight: bold;
+    transition: .2s;
+    transform: scale(0.9);
+    font-weight: bold;
 }
 
 
@@ -159,60 +180,68 @@ font-weight: bold;
 
 /* Resetando estilos padrão */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .neurocaminhos {
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
 }
 
 .containercaminho {
-  display: flex;
-  position: relative;  /* Permite a sobreposição absoluta dentro deste contêiner */
+    display: flex;
+    position: relative;
+    /* Permite a sobreposição absoluta dentro deste contêiner */
 }
 
 .sidebar {
-  margin-right: 20px;
+    margin-right: 20px;
 }
 
 .sidebar button {
-  margin-bottom: 10px;
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .sidebar button:hover {
-  background-color: #45a049;
+    background-color: #45a049;
 }
 
 .imagem-cerebro {
-  position: relative; /* Permite a sobreposição da seta */
+    position: relative;
+    /* Permite a sobreposição da seta */
 }
 
 .base {
-  width: 500px; /* Ajuste o tamanho da imagem do cérebro conforme necessário */
-  height: auto;
+    width: 500px;
+    /* Ajuste o tamanho da imagem do cérebro conforme necessário */
+    height: auto;
 }
 
 .overlay {
-  position: absolute; /* Posição absoluta para sobrepor sobre a imagem do cérebro */
-  top: 0;
-  left: 0;
-  width: 100%;  /* Ajuste o tamanho da seta para cobrir a imagem */
-  height: 100%; /* Ajuste o tamanho da seta */
-  pointer-events: none;  /* Para garantir que os botões possam ser clicados */
-  display: none; /* A seta ficará oculta inicialmente */
+    position: absolute;
+    /* Posição absoluta para sobrepor sobre a imagem do cérebro */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Ajuste o tamanho da seta para cobrir a imagem */
+    height: 100%;
+    /* Ajuste o tamanho da seta */
+    pointer-events: none;
+    /* Para garantir que os botões possam ser clicados */
+    display: none;
+    /* A seta ficará oculta inicialmente */
 }
 
 
@@ -500,7 +529,7 @@ iframe {
     margin: 4vw;
     padding: 1vw;
     width: 12%;
-   
+
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -508,9 +537,11 @@ iframe {
     width: 8vw;
     border-radius: 20px;
 }
-.neuros:hover{
-   transform: translateY(-20px);
+
+.neuros:hover {
+    transform: translateY(-20px);
 }
+
 .neuros h3 {
     font-family: "Palanquin Dark", sans-serif;
     color: #235158;
@@ -538,9 +569,11 @@ iframe {
     font-family: "Baloo 2", sans-serif;
     color: #0d2f33;
 }
+
 .vicios {
     padding: 2vw;
 }
+
 .vicios div.conteudo li {
     background: none;
     border: 2.5px solid #235158;
@@ -553,19 +586,23 @@ iframe {
     color: #235158;
     margin: 0 2vw;
 }
+
 .vicios div.conteudo ul {
     display: flex;
     margin: 4vw 10vw;
     list-style-type: none;
 }
+
 .vicios div.conteudo p {
     font-family: "Baloo 2", sans-serif;
     text-align: center;
 }
+
 .vicios div.conteudo {
     display: inline-block;
 }
-.vicios h2{
+
+.vicios h2 {
     color: #FBF9F1;
     font-family: "Palanquin Dark", sans-serif;
     font-size: 2.5rem;
@@ -574,48 +611,57 @@ iframe {
     background-color: #92C7CF;
     border-radius: 40px;
 }
+
 .vicios p {
     font-size: 2rem;
     margin: 0 19vw 4vw 17vw;
     line-height: 45px;
     font-family: "Baloo 2", sans-serif;
 }
+
 .cocaina {
     width: 40%;
     height: 40%;
     margin: 2vw 0 0 0;
 }
+
 .anfetamina {
     width: 30%;
     height: 30%;
     margin: 2vw 2vw 0 4vw;
 }
+
 .cigarros {
     width: 40%;
     height: 50%;
     margin: 4vw 0 0 0;
 }
+
 .opiaceos {
     width: 40%;
     height: 50%;
     margin: 2vw 0 0 0;
 }
+
 .alcool {
     width: 30%;
     height: 40%;
     margin: 2vw 0 0 4vw;
     padding: 0 1.8vw 0 0;
 }
+
 .cadaVicio {
     background-color: #92C7CF;
     padding: 4vw 2vw;
 }
+
 .fundo {
     background-color: #F0EDE2;
     margin: 2vw 20vw;
     padding: 2vw 2vw 4vw 2vw;
     display: flex;
 }
+
 .fundo h3 {
     font-size: 2rem;
     color: #235158;
@@ -623,6 +669,7 @@ iframe {
     text-align: center;
     padding: 1vw 0;
 }
+
 .fundo li {
     font-family: "Baloo 2", sans-serif;
     font-size: 1.5rem;
@@ -630,10 +677,12 @@ iframe {
     list-style-type: disc;
     margin: 0 0 0 2vw;
 }
+
 .outros {
     padding: 2vw;
     background-color: #FBF9F1;
 }
+
 .outros h2 {
     font-size: 2.5rem;
     text-align: center;
@@ -644,25 +693,31 @@ iframe {
     font-family: "Palanquin Dark", sans-serif;
     display: inline-block;
 }
+
 .outros p {
     margin: 3vw 8vw;
 }
+
 p.forte {
     font-weight: bold;
 }
+
 .outros li {
     background-color: #92C7CF;
     margin: 2vw;
 }
+
 .outros div {
     display: flex;
     margin: 2vw 10vw;
 }
+
 .outros div img {
     width: 40%;
     margin: 2vw 2vw 2vw 6vw;
     border-bottom: 1px solid #235158;
 }
+
 .outros h3 {
     font-size: 2.5rem;
     text-align: center;
@@ -670,10 +725,12 @@ p.forte {
     font-family: "Palanquin Dark", sans-serif;
     padding: 1vw 0 3vw 0;
 }
+
 .saida {
     padding: 2vw;
     background-color: #F0EDE2;
 }
+
 .saida h2 {
     color: #FBF9F1;
     font-family: "Palanquin Dark", sans-serif;
@@ -683,6 +740,7 @@ p.forte {
     background-color: #92C7CF;
     border-radius: 40px;
 }
+
 /* ---footer--- */
 
 footer {
@@ -726,4 +784,130 @@ footer a span:hover {
     transition: .2s;
     transform: scale(0.9);
     cursor: pointer;
+}
+
+/*------------CELULAR----------------*/
+
+@media screen and (max-width: 900px) {
+
+    /*---introducao---*/
+    .introducao {
+        display: block;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .introducao h1 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .introducao img {
+        width: 50%;
+        opacity: 90%;
+        margin: 10px 0;
+    }
+
+    .introducao p {
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    /*---conteudo---*/
+
+    .conteudo h2 {
+        font-size: 1.5rem;
+        padding: 20px 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .conteudo ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .conteudo ul li {
+        max-width: 90%;
+        font-size: 1.2rem;
+        margin: 2vw auto;
+    }
+
+    /*---barreira hemato---*/
+
+    .barreirahema p {
+        font-size: 1.2rem;
+        margin: 2vw auto;
+        line-height: 28px;
+        max-width: 90%;
+    }
+
+    div.textocerebro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.textocerebro p {
+        font-size: 1.2rem;
+        margin: 2vw auto;
+        text-align: center;
+        max-width: 90%;
+        line-height: 28px;
+    }
+
+    div.textocerebro img {
+        width: 60%;
+        margin: 2vw 0;
+    }
+
+    /*---estrutura cerebro---*/
+    .estruturacerebro h2 {
+        margin: 0 auto;
+        font-size: 1.5rem;
+        padding: 20px 0;
+        width: 90%;
+    }
+
+    .estruturacerebro p.centro {
+        font-size: 1.2rem;
+        margin: 2vw auto;
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .estruturacerebro p.norm {
+        font-size: 1.2rem;
+        margin: 2vw auto;
+        text-align: center;
+        max-width: 90%;
+        margin: 0 0 2vw 10vw;
+    }
+
+    .estruturacerebro ul {
+        margin: 2vw auto;
+        padding: 0 5vw;
+        list-style-position: inside;
+    }
+
+    .estruturacerebro li {
+        font-size: 1.2rem;
+        margin: auto;
+        text-align: center;
+    }
+
+    .estruturacerebro div.cerebrofinal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+
 }
