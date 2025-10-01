@@ -557,6 +557,8 @@ iframe {
     color: #0d2f33;
 }
 
+/*----------vicios---------------*/
+
 .vicios {
     padding: 2vw;
 }
@@ -665,6 +667,7 @@ iframe {
     margin: 0 0 0 2vw;
 }
 
+
 .outros {
     padding: 2vw;
     background-color: #FBF9F1;
@@ -697,20 +700,43 @@ p.forte {
 .outros div {
     display: flex;
     margin: 2vw 10vw;
+    max-width: 80vw;
 }
 
 .outros div img {
     width: 40%;
     margin: 2vw 2vw 2vw 6vw;
     border-bottom: 1px solid #235158;
+    margin: 0 auto;
 }
 
 .outros h3 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     text-align: center;
     color: #235158;
     font-family: "Palanquin Dark", sans-serif;
     padding: 1vw 0 3vw 0;
+}
+
+
+.outros h3:hover {
+    color: #0d2f33;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+.outros summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.outros details p{
+    max-width: 90%;
+    margin: 15px auto;
+    text-align: left;
+    font-size: 1.2rem;
+    font-family: "Baloo 2", sans-serif;
+    color: #0d2f33;
 }
 
 .saida {
@@ -726,6 +752,33 @@ p.forte {
     padding: 20px 0;
     background-color: #92C7CF;
     border-radius: 40px;
+}
+
+.saida p.saida{
+    padding: 1vw 15vw;
+    margin: 2vw 0;
+}
+
+.saida div.dicas{
+    background: #AAD7D9;
+    border-radius: 50px;
+    padding: 2vw 8vw;
+    width: 40%;
+    margin: auto;
+}
+
+.saida div.dicas p{
+    margin: 15px;
+    font-weight: bold;
+}
+
+.saida div.dicas ol li{
+    font-family: "Sarabun", sans-serif;
+    color: #235158;
+    font-size: 1.5rem;
+    list-style: decimal;
+    max-width: 50vw;
+    line-height: 30px;
 }
 
 /* ---footer--- */
