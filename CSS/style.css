@@ -34,13 +34,14 @@ h2 {
 /*=================SVG CEREBRO DPS MUDAR DE POSIÇÃO===================*/
 .bannerCere {
     background: url(../SRC/bannerCerebro.png);
-    align-items: centerz';
+    align-items: center;
 
 }
 
 .bannerCere h1 {
     text-align: center;
     font-size: 4rem;
+    padding: 15vw;
     color: #A3D7DF;
 
 }
@@ -108,8 +109,12 @@ h2 {
     color: #235158;
 }
 
-#textoC1,
-#textoC2 {
+#infoC2,
+#infoC1 div{
+    color: #235158;
+    font-size: 1.9rem;
+}
+#textoC1, #textoC2 {
     display: block;
     border: none;
 }
@@ -129,8 +134,7 @@ h2 {
     list-style-type: disc !important;
     /* Define bolinhas */
     padding-left: 20px !important;
-    /* Espaço à esquerda para as bolinhas aparecerem */
-    margin-top: 10px;
+   
 }
 
 #textoC2 li {
@@ -179,11 +183,6 @@ header ul li a:hover {
 
 
 /* Resetando estilos padrão */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 .neurocaminhos {
     font-family: Arial, sans-serif;
@@ -201,22 +200,10 @@ header ul li a:hover {
 }
 
 .sidebar {
-    margin-right: 20px;
+    margin: 4vw;
 }
 
-.sidebar button {
-    margin-bottom: 10px;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
-.sidebar button:hover {
-    background-color: #45a049;
-}
 
 .imagem-cerebro {
     position: relative;
@@ -224,7 +211,7 @@ header ul li a:hover {
 }
 
 .base {
-    width: 500px;
+    width: 700px;
     /* Ajuste o tamanho da imagem do cérebro conforme necessário */
     height: auto;
 }
