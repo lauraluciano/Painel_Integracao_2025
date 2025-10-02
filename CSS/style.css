@@ -33,14 +33,14 @@ h2 {
 
 /*=================SVG CEREBRO DPS MUDAR DE POSIÇÃO===================*/
 .bannerCere {
-     background: #fbf3de; 
-     display: flex;
+    background: #fbf3de;
+    display: flex;
     align-items: center;
 
 }
 
 .bannerCere h1 {
-      font-family: "Palanquin Dark", sans-serif;
+    font-family: "Palanquin Dark", sans-serif;
     text-align: center;
     font-size: 4rem;
     font-weight: bold;
@@ -56,11 +56,13 @@ h2 {
     align-items: center;
     margin: 4vw auto;
 }
-.textoCima{
+
+.textoCima {
     display: block;
     text-align: center;
     margin: 2vw 10vw;
 }
+
 .conteudoCere {
     display: flex;
 
@@ -114,7 +116,7 @@ h2 {
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-#infoC2 h1, 
+#infoC2 h1,
 #infoC1 h1 {
     font-size: 2rem;
     text-align: center;
@@ -157,15 +159,16 @@ h2 {
 }
 
 #textoC2 li {
-     line-height: 2.5rem;
+    line-height: 2.5rem;
     margin-bottom: 6px;
     /* Espaço entre os itens da lista */
 }
 
-[class^="toggle"]{
+[class^="toggle"] {
     fill: #12383d !important;
 
 }
+
 /*=================SVG CEREBRO DPS MUDAR DE POSIÇÃO===================*/
 
 /*---header---*/
@@ -175,7 +178,7 @@ header nav {
     justify-content: space-between;
     padding: 1vw 8vw;
     align-items: center;
-   
+
 }
 
 header ul {
@@ -191,7 +194,7 @@ header ul li a {
     background: #F0EDE2;
     padding: 10px 35px;
     border-radius: 50px;
-      border: 2px solid #235158;
+    border: 2px solid #235158;
     display: inline-block;
 }
 
@@ -974,20 +977,146 @@ footer a span:hover {
         width: 100%;
         height: auto;
     }
-         .neurotrans{
-            padding: 2vw;
-         }
-    .neurotrans h2{
+
+
+
+
+
+    .neurotrans {
+        padding: 2vw;
+    }
+
+    .neurotrans h2 {
         padding: 20px 15px;
         margin: 2vw;
-       font-size: 1.5rem;
-       margin: block;
+        font-size: 1.5rem;
+        margin: block;
     }
+
     .neurotrans div.textoNeuro {
         margin: 4vw 2vw;
     }
+
     .neurotrans p {
         font-size: 1.2rem;
         line-height: 20px;
+    }
+
+    .neurotrans div.tiponeuro ul {
+        display: block;
+        margin: 0vw 12vw;
+    }
+
+    .neurotrans div.tiponeuro ul li {
+        margin: 4vw 2vw;
+        padding: 2vw;
+    }
+
+    .umTres,
+    .quatroSeis,
+    .seteNove {
+        max-width: 320px;
+    }
+
+    .neuros {
+        width: 35%;
+
+    }
+
+    .neuros h3 {
+        padding: 2vw;
+        font-size: 1.2rem;
+    }
+
+    .neuros details ul {
+        font-size: 1rem;
+        margin: 5px;
+    }
+
+
+
+      .vicios div.conteudo{
+        display: block;
+      }
+    .vicios h2 {
+        font-size: 1.5rem;
+        padding: 20px 10px;
+        margin: 0 20vw;
+    }
+      .vicios div.conteudo ul {
+        margin: 4vw 5vw;
+      }
+    .vicios div.conteudo li{
+        padding: 3vw;
+        max-width: max-content;
+        font-size: 1.5rem;
+        margin: 2vw;
+      
+    }
+   
+    .vicios p {
+        text-align: center;
+        font-size: 1.3rem;
+        margin: 4vw;
+        line-height: 25px;
+    }
+    .textoCerebro img {
+        width:50%;
+        
+    }
+
+
+
+
+    .fundo{
+        margin: 2vw 10vw;
+        display: block;
+       
+    }
+    .fundo img {
+        margin: 2vw 20vw;
+    }
+    .fundo h3{
+        font-size: 1.8rem;
+    }
+    .fundo li {
+        margin: 2vw 4vw;
+        font-size: 1.2rem;
+    }
+
+
+
+    .outros p {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    .outros div {
+        display: block;
+    }
+    .outros div img{
+        width: 60%;
+        margin: 2vw 10vw;
+    }
+    
+
+
+    .saida h2 {
+        font-size: 2rem;
+        margin: auto;
+        padding: 10px 20px;
+        border-radius: 200px;
+    }
+    .saida p.saida {
+          font-size: 1.2rem;
+        line-height: 1.5rem;
+        padding: 2vw 10vw;
+    }
+
+    .saida div.dicas {
+        width: 80%;
+    }
+    .saida div.dicas ol li{
+        font-size: 1.2rem;
+        max-width: max-content;
     }
 }
