@@ -33,16 +33,19 @@ h2 {
 
 /*=================SVG CEREBRO DPS MUDAR DE POSIÇÃO===================*/
 .bannerCere {
-    background: url(../SRC/bannerCerebro.png);
+     background: #fbf3de; 
+     display: flex;
     align-items: center;
 
 }
 
 .bannerCere h1 {
+      font-family: "Palanquin Dark", sans-serif;
     text-align: center;
     font-size: 4rem;
+    font-weight: bold;
     padding: 15vw;
-    color: #A3D7DF;
+    color: #235158;
 
 }
 
@@ -53,7 +56,11 @@ h2 {
     align-items: center;
     margin: 4vw auto;
 }
-
+.textoCima{
+    display: block;
+    text-align: center;
+    margin: 2vw 10vw;
+}
 .conteudoCere {
     display: flex;
 
@@ -69,6 +76,7 @@ h2 {
     max-width: 100%;
     width: 100%;
 }
+
 
 .area {
     background: none;
@@ -149,11 +157,15 @@ h2 {
 }
 
 #textoC2 li {
-     line-height: 3rem;
+     line-height: 2.5rem;
     margin-bottom: 6px;
     /* Espaço entre os itens da lista */
 }
 
+[class^="toggle"]{
+    fill: #12383d !important;
+
+}
 /*=================SVG CEREBRO DPS MUDAR DE POSIÇÃO===================*/
 
 /*---header---*/
@@ -163,6 +175,7 @@ header nav {
     justify-content: space-between;
     padding: 1vw 8vw;
     align-items: center;
+   
 }
 
 header ul {
@@ -178,7 +191,7 @@ header ul li a {
     background: #F0EDE2;
     padding: 10px 35px;
     border-radius: 50px;
-    border: 2px solid #235158;
+      border: 2px solid #235158;
     display: inline-block;
 }
 
@@ -961,5 +974,20 @@ footer a span:hover {
         width: 100%;
         height: auto;
     }
-
+         .neurotrans{
+            padding: 2vw;
+         }
+    .neurotrans h2{
+        padding: 20px 15px;
+        margin: 2vw;
+       font-size: 1.5rem;
+       margin: block;
+    }
+    .neurotrans div.textoNeuro {
+        margin: 4vw 2vw;
+    }
+    .neurotrans p {
+        font-size: 1.2rem;
+        line-height: 20px;
+    }
 }
