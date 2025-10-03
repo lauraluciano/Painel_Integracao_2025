@@ -8,25 +8,63 @@
     <link rel="website icon" type="png" href="SRC/synapseLogo.png">
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Palanquin+Dark:wght@400;500;600;700&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+     <script src="js/menu.js"></script>
+    <script src="https://kit.fontawesome.com/503e616a76.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
+        <div class="menu">
         <nav>
-            <div>
+            <div class="logo">
                 <a href="index.html"><img src="SRC/LogoSynapse.png" alt="Logo do grupo" class="Logo"></a>
             </div>
             <div>
-                <ul>
+                <ul class="nav-item">
                     <li>
                         <a href="index.html">Inicio</a>
+                        <ul>
+                            <li>
+                                <a href="dependencias.html">Dependências</a>
+                            </li>
+                            <li>
+                                <a href="referencias.html">Referências</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a href="cerebro.html">Mapa Cérebro</a>
                     </li>
                 </ul>
             </div>
+            <div class="menu-mobile-icon">
+                <button onclick="menuShow()"> <img class="icon" src="SRC/menuAberto.png"></button>
+            </div>
         </nav>
+        <div class="mobile-menu">
+            <ul class="nav-item">
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="dependencias.html">Dependências</a>
+                </li>
+                <li>
+                    <a href="referencias.html">Referências</a>
+                </li>
+                <li>
+                    <a href="cerebro.html">Mapa Cérebro</a>
+                </li>
+            </ul>
+        </div>
+        </div>
     </header>
     <main>
         <section class="ref">
@@ -36,79 +74,87 @@
             <ul>
                 <li>
                     <p>FREEDMAN, Mark. Cérebro. Manual MSD, 2025. Disponível em:
-                    <a
-                        href=" https://www.msdmanuals.com/pt/casa/dist%C3%BArbios-cerebrais-da-medula-espinal-e-dos-nervos/biologia-do-sistema-nervoso/c%C3%A9rebro">
-                        https://www.msdmanuals.com/pt/casa/dist%C3%BArbios-cerebrais-da-medula-espinal-e-dos-nervos/biologia-do-sistema-nervoso/c%C3%A9rebro.
-                    </a>
+                        <a
+                            href=" https://www.msdmanuals.com/pt/casa/dist%C3%BArbios-cerebrais-da-medula-espinal-e-dos-nervos/biologia-do-sistema-nervoso/c%C3%A9rebro">
+                            https://www.msdmanuals.com/pt/casa/dist%C3%BArbios-cerebrais-da-medula-espinal-e-dos-nervos/biologia-do-sistema-nervoso/c%C3%A9rebro.
+                        </a>
 
-                    Acesso em: 14 set. 2025.
+                        Acesso em: 14 set. 2025.
                     </p>
                 </li>
                 <Li>
                     <p>
-                    RIBEIRO, Marcelo. NEUROBIOLOGIA DA DEPENDÊNCIA QUÍMICA. São Paulo: UNIAD – UNIFESP, 2003.
+                        RIBEIRO, Marcelo. NEUROBIOLOGIA DA DEPENDÊNCIA QUÍMICA. São Paulo: UNIAD – UNIFESP, 2003.
                     </p>
                 </Li>
-                <li><p>
-                    NIDA. 6 de julho de 2020. Drogas e o Cérebro. Recuperado de
-                    <a
-                        href="https://nida.nih.gov/publications/drugs-brains-behavior-science-addiction/drugs-brain">https://nida.nih.gov/publications/drugs-brains-behavior-science-addiction/drugs-brain</a>
-                    em 26 de
-                    setembro de 2025.
+                <li>
+                    <p>
+                        NIDA. 6 de julho de 2020. Drogas e o Cérebro. Recuperado de
+                        <a
+                            href="https://nida.nih.gov/publications/drugs-brains-behavior-science-addiction/drugs-brain">https://nida.nih.gov/publications/drugs-brains-behavior-science-addiction/drugs-brain</a>
+                        em 26 de
+                        setembro de 2025.
                     </p>
 
                 </li>
                 <li>
-                  <p>  Não Especificado. A anatomia dos vícios: por que eles surgem e como domá-los. Tribunal de Justiça do
-                    Distrito Federal e dos Territórios, 2022. Disponível em:
-                    <a
-                        href="  https://www.tjdft.jus.br/informacoes/programas-projetos-e-acoes/pro-vida/dicas-de-saude/pilulas-de-saude/a-anatomia-dos-vicios-por-que-eles-surgem-e-como-doma-los">
-                        https://www.tjdft.jus.br/informacoes/programas-projetos-e-acoes/pro-vida/dicas-de-saude/pilulas-de-saude/a-anatomia-dos-vicios-por-que-eles-surgem-e-como-doma-los.
-                    </a>
+                    <p> Não Especificado. A anatomia dos vícios: por que eles surgem e como domá-los. Tribunal de
+                        Justiça do
+                        Distrito Federal e dos Territórios, 2022. Disponível em:
+                        <a
+                            href="  https://www.tjdft.jus.br/informacoes/programas-projetos-e-acoes/pro-vida/dicas-de-saude/pilulas-de-saude/a-anatomia-dos-vicios-por-que-eles-surgem-e-como-doma-los">
+                            https://www.tjdft.jus.br/informacoes/programas-projetos-e-acoes/pro-vida/dicas-de-saude/pilulas-de-saude/a-anatomia-dos-vicios-por-que-eles-surgem-e-como-doma-los.
+                        </a>
 
-                    Acesso em: 16 out. 2025.
+                        Acesso em: 16 out. 2025.
                     </p>
                 </li>
                 <li>
                     <p>
-                    Não Especificado. Dependência do Sexo. Villa Ramadas, 2020. Disponível em: <a
-                        href="https://www.villaramadas.com/tratamentos/vicios-de-sexo-e-amor/dependencia-do-sexo">
-                        https://www.villaramadas.com/tratamentos/vicios-de-sexo-e-amor/dependencia-do-sexo .</a>
-                    Acesso em: 15
-                    set. 2025.
-                    </p>
-                </li>
-                <li> <p>
-                    Turma Jovem Aprendiz. Malefícios na pornografia? Da liberação de dopamina ao vício: A Organização
-                    Mundial da Saúde (OMS) classifica o vício em pornografia como distúrbio psicológico.. Narrar para
-                    Transgredir, 2024. Disponível em: <a
-                        href="https://catarinas.info/transgredir-arquivos/maleficios-na-pornografia-da-liberacao-de-dopamina-ao-vicio/">
-                        https://catarinas.info/transgredir-arquivos/maleficios-na-pornografia-da-liberacao-de-dopamina-ao-vicio/.</a>
-
-                    Acesso em: 15 set. 2025.
-                    </p>
-                </li>
-                <li> <p>
-                    DOS SANTOS, Vanessa Sardinha . Neurotransmissor: Um neurotransmissor pode ser definido como um
-                    mensageiro químico que é liberado pelos neurônios. Essa molécula garante que a informação seja
-                    levada a uma célula receptora.. Mundo Educação, 2020. Disponível em:
-                    <a href="https://mundoeducacao.uol.com.br/biologia/neurotransmissor.htm">
-                        https://mundoeducacao.uol.com.br/biologia/neurotransmissor.htm.</a>
-                    Acesso em: 14 out. 2025.
+                        Não Especificado. Dependência do Sexo. Villa Ramadas, 2020. Disponível em: <a
+                            href="https://www.villaramadas.com/tratamentos/vicios-de-sexo-e-amor/dependencia-do-sexo">
+                            https://www.villaramadas.com/tratamentos/vicios-de-sexo-e-amor/dependencia-do-sexo .</a>
+                        Acesso em: 15
+                        set. 2025.
                     </p>
                 </li>
                 <li>
                     <p>
-                    OLIVEIRA, Sibele. Comida, sexo, jogos: como se trata um vício, especialmente comportamental?.
-                    Hospital Santa Mônica, 2020. Disponível em:
-                    <a
-                        href="https://hospitalsantamonica.com.br/comida-sexo-jogos-como-se-trata-um-vicio-especialmente-comportamental/">
-                        https://hospitalsantamonica.com.br/comida-sexo-jogos-como-se-trata-um-vicio-especialmente-comportamental/.</a>
-                    Acesso em: 16 set. 2025.
+                        Turma Jovem Aprendiz. Malefícios na pornografia? Da liberação de dopamina ao vício: A
+                        Organização
+                        Mundial da Saúde (OMS) classifica o vício em pornografia como distúrbio psicológico.. Narrar
+                        para
+                        Transgredir, 2024. Disponível em: <a
+                            href="https://catarinas.info/transgredir-arquivos/maleficios-na-pornografia-da-liberacao-de-dopamina-ao-vicio/">
+                            https://catarinas.info/transgredir-arquivos/maleficios-na-pornografia-da-liberacao-de-dopamina-ao-vicio/.</a>
+
+                        Acesso em: 15 set. 2025.
                     </p>
                 </li>
-                <li> <p>
-                    NIEL , Marcelo . Dependências Não Químicas e Compulsões Modernas. São Paulo: Editora Atheneu, 2016.
+                <li>
+                    <p>
+                        DOS SANTOS, Vanessa Sardinha . Neurotransmissor: Um neurotransmissor pode ser definido como um
+                        mensageiro químico que é liberado pelos neurônios. Essa molécula garante que a informação seja
+                        levada a uma célula receptora.. Mundo Educação, 2020. Disponível em:
+                        <a href="https://mundoeducacao.uol.com.br/biologia/neurotransmissor.htm">
+                            https://mundoeducacao.uol.com.br/biologia/neurotransmissor.htm.</a>
+                        Acesso em: 14 out. 2025.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        OLIVEIRA, Sibele. Comida, sexo, jogos: como se trata um vício, especialmente comportamental?.
+                        Hospital Santa Mônica, 2020. Disponível em:
+                        <a
+                            href="https://hospitalsantamonica.com.br/comida-sexo-jogos-como-se-trata-um-vicio-especialmente-comportamental/">
+                            https://hospitalsantamonica.com.br/comida-sexo-jogos-como-se-trata-um-vicio-especialmente-comportamental/.</a>
+                        Acesso em: 16 set. 2025.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        NIEL , Marcelo . Dependências Não Químicas e Compulsões Modernas. São Paulo: Editora Atheneu,
+                        2016.
                     </p>
 
 
@@ -154,7 +200,7 @@
         </div>
 
         <div>
-            <a href="index.html"><span class="fa-solid fa-chevron-up"></span></a>
+            <a href="referencias.html"><span class="fa-solid fa-chevron-up"></span></a>
         </div>
     </footer>
 </body>

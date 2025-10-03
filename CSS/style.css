@@ -7,8 +7,8 @@
 
 body {
     background: #FFF2EF;
-     max-width: 100vw;
-      overflow-x: hidden;
+    max-width: 100vw;
+    overflow-x: hidden;
 
 }
 
@@ -19,18 +19,21 @@ p {
 }
 
 /*---header---*/
-header{
-  background: #AAD7D9;
-  padding: 1vw 5vw;
+header {
+    background: #AAD7D9;
+    padding: 1vw 5vw;
 }
+
 header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 header div a img {
     width: 20%;
 }
+
 header ul {
     display: flex;
     gap: 2vw;
@@ -50,14 +53,36 @@ header ul li a {
     text-align: center;
 }
 
+nav ul li ul {
+    display: none;
+
+}
+
+nav ul li ul li {
+    width: 80%;
+}
+
+nav ul li:hover ul {
+    display: block;
+    background-color: transparent;
+    position: absolute;
+
+
+}
+
 header ul li a:hover {
     transition: .2s;
     transform: scale(0.9);
     font-weight: bold;
 }
 
+.menu-mobile-icon {
+    display: none;
+}
 
-
+.mobile-menu {
+    display: none;
+}
 
 /*---introducao---*/
 .introducao {
@@ -106,6 +131,7 @@ header ul li a:hover {
     border-radius: 20px;
     margin: 0 30vw;
 }
+
 div.conteudo li {
     background: none;
     border: 2.5px solid #235158;
@@ -190,6 +216,7 @@ div.textocerebro {
     border-radius: 20px;
     margin: 0 30vw;
 }
+
 .estruturacerebro p.centro {
     font-size: 2rem;
     margin: 4vw 15vw;
@@ -241,6 +268,7 @@ iframe {
 .neurotrans {
     padding: 4vw;
 }
+
 .neurotrans h2 {
     font-family: "Palanquin Dark", sans-serif;
     text-align: center;
@@ -251,6 +279,7 @@ iframe {
     border-radius: 20px;
     margin: 0 30vw;
 }
+
 .neurotrans div.textoNeuro {
     margin: 4vw 15vw;
 }
@@ -375,6 +404,7 @@ iframe {
 .vicios {
     padding: 4vw;
 }
+
 .vicios h2 {
     font-family: "Palanquin Dark", sans-serif;
     text-align: center;
@@ -385,6 +415,7 @@ iframe {
     border-radius: 20px;
     margin: 0 30vw;
 }
+
 .vicios div.conteudo li {
     background: none;
     border: 2.5px solid #235158;
@@ -413,9 +444,10 @@ iframe {
     display: inline-block;
 }
 
-.vicios div.textoCerebro{
+.vicios div.textoCerebro {
     display: flex;
 }
+
 .vicios p {
     font-size: 2rem;
     margin: 0 19vw 4vw 17vw;
@@ -517,10 +549,10 @@ p.forte {
     display: flex;
 } fica bugando*/
 
-.outros div ul li{
+.outros div ul li {
     margin: 2vw 10vw;
-    max-width: 20%;
-    border-radius: 40px;
+    max-width: 30%;
+    border-radius: 20px;
 }
 
 .outros div img {
@@ -566,6 +598,7 @@ p.forte {
     padding: 4vw;
     background-color: #F0EDE2;
 }
+
 .saida h2 {
     font-family: "Palanquin Dark", sans-serif;
     text-align: center;
@@ -576,6 +609,7 @@ p.forte {
     border-radius: 20px;
     margin: 0 30vw;
 }
+
 .saida p.saida {
     padding: 1vw 15vw;
     margin: 2vw 0;
@@ -586,7 +620,7 @@ p.forte {
     border-radius: 50px;
     padding: 2vw 5vw;
     width: 50%;
-     box-sizing: border-box;
+    box-sizing: border-box;
     margin: auto;
 }
 
@@ -650,10 +684,6 @@ footer a span:hover {
 }
 
 
-
-
-
-
 /*=================SVG CEREBRO DPS MUDAR DE POSIÇÃO===================*/
 .bannerCere {
     background: #fbf3de;
@@ -692,10 +722,12 @@ footer a span:hover {
 
 }
 
-.imgDiv1 svg , .imgDiv svg{
-    width:980px; 
-    height:784px;
+.imgDiv1 svg,
+.imgDiv svg {
+    width: 980px;
+    height: 784px;
 }
+
 .area {
     background: none;
     pointer-events: all;
@@ -786,7 +818,7 @@ footer a span:hover {
 }
 
 /*=================SVG CEREBRO DPS MUDAR DE POSIÇÃO===================*/
-*----------------------CAMINHO----------------------*/
+/*----------------------CAMINHO----------------------*/
 
 
 /* Resetando estilos padrão */
@@ -838,39 +870,82 @@ footer a span:hover {
     /* A seta ficará oculta inicialmente */
 }
 
-.ref{
+/*referencias*/
+.ref {
     margin: 2vw 4vw;
 }
+
 .ref h1 {
     font-family: "Palanquin Dark", sans-serif;
-    margin: 2vw 0;
+    margin: 5vw;
+    text-align: center;
     font-size: 3rem;
     color: #235158;
-    
+
 }
+
 .ref ul {
+    margin: 5vw;
     list-style-type: disc;
 }
+
 .ref li {
     margin: 2vw;
 }
+
 .ref li p {
-    
+
+    color: #000;
+    font-size: 1.5rem
+}
+
+.ref li p a {
+    word-wrap: break-word;
+    color: #0d2f33;
 }
 
 /*------------CELULAR----------------*/
 
 @media screen and (max-width: 900px) {
- 
-    header  img {
-     width: 90%;
 
+    header .logo img {
+        width: 90%;
     }
-     header nav ul li a {
-        font-size: 1rem;
-        padding: 10px;
-     }
 
+    header  ul li a {
+        font-size: 1rem;
+    
+        padding: 10px 15px;
+        width: 80%;
+    }
+    .nav-item {
+        display: none;
+    }
+
+    .menu-mobile-icon {
+        display: block;
+    }
+
+    .menu-mobile-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .open {
+        display: block;
+    }
 
     /*---introducao---*/
     .introducao {
@@ -998,7 +1073,7 @@ footer a span:hover {
 
     .neurotrans {
         padding: 2vw;
-       
+
     }
 
     .neurotrans h2 {
@@ -1039,9 +1114,11 @@ footer a span:hover {
         width: 40%;
         margin: 2vw auto;
     }
+
     .neuros img {
         width: 40%;
     }
+
     .neuros h3 {
         padding: 2vw;
         font-size: 1.2rem;
@@ -1054,9 +1131,10 @@ footer a span:hover {
 
 
 
-      .vicios div.conteudo{
+    .vicios div.conteudo {
         display: block;
-      }
+    }
+
     .vicios h2 {
         font-size: 1.5rem;
         padding: 20px 10px;
@@ -1064,44 +1142,50 @@ footer a span:hover {
         margin: 0 auto;
         text-align: center;
     }
-      .vicios div.conteudo ul {
+
+    .vicios div.conteudo ul {
         margin: 4vw 5vw;
-      }
-    .vicios div.conteudo li{
+    }
+
+    .vicios div.conteudo li {
         padding: 3vw;
         max-width: 90%;
         word-wrap: break-word;
         font-size: 1.5rem;
         margin: 2vw;
-      
+
     }
-   
+
     .vicios p {
         text-align: center;
         font-size: 1.3rem;
         margin: 4vw;
         line-height: 25px;
     }
+
     .textoCerebro img {
-        width:50%;
-        
+        width: 50%;
+
     }
 
 
 
 
-    .fundo{
+    .fundo {
         margin: 2vw 10vw;
         display: block;
-       
+
     }
+
     .fundo img {
         margin: 2vw auto;
         display: block;
     }
-    .fundo h3{
+
+    .fundo h3 {
         font-size: 1.8rem;
     }
+
     .fundo li {
         margin: 2vw 4vw;
         font-size: 1.2rem;
@@ -1109,24 +1193,27 @@ footer a span:hover {
 
 
     .outros h2 {
-        margin: 0 auto;
         text-align: center;
+        margin: 0 8vw;
         font-size: 2rem;
         padding: 2vw 4vw;
     }
+
     .outros p {
         font-size: 1.2rem;
         line-height: 1.5rem;
     }
+
     .outros div {
         display: block;
     }
-    .outros div img{
+
+    .outros div img {
         width: 80%;
         margin: 2vw auto;
         display: block;
     }
-    
+
 
 
     .saida h2 {
@@ -1135,8 +1222,9 @@ footer a span:hover {
         padding: 10px 20px;
         border-radius: 200px;
     }
+
     .saida p.saida {
-          font-size: 1.2rem;
+        font-size: 1.2rem;
         line-height: 1.5rem;
         padding: 2vw 10vw;
     }
@@ -1144,44 +1232,51 @@ footer a span:hover {
     .saida div.dicas {
         width: 80%;
     }
-    .saida div.dicas ol li{
+
+    .saida div.dicas ol li {
         font-size: 1.2rem;
         max-width: 100%;
         word-wrap: break-word;
     }
 
-          /*PAGINA CEREBRO*/
+    /*PAGINA CEREBRO*/
 
 
-       .bannerCere{
+    .bannerCere {
         display: block;
         align-items: normal;
-    } 
-    .bannerCere h1{
-      padding: 4vw;
     }
+
+    .bannerCere h1 {
+        padding: 4vw;
+    }
+
     .bannerCere img {
         margin: 2vw 4vw;
         width: 80%;
     }
-    .SVG{
+
+    .SVG {
         display: block;
     }
-     .conteudoCere{
+
+    .conteudoCere {
         display: block;
-        width: 100%;     
-     }
-    
-     .imgDiv svg , .imgDiv1 svg {
+        width: 100%;
+    }
+
+    .imgDiv svg,
+    .imgDiv1 svg {
         width: 90%;
         height: 90%;
         margin: 2vw;
-     }
-     .textoCima{
-        margin: 2vw 5vw;
-     }
-     .textoCima p {
-        font-size: 1.5rem;
-     }
-}
+    }
 
+    .textoCima {
+        margin: 2vw 5vw;
+    }
+
+    .textoCima p {
+        font-size: 1.5rem;
+    }
+}
