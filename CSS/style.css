@@ -17,145 +17,6 @@ p {
     color: #235158;
     font-size: 2rem;
 }
-/*=================SVG CEREBRO DPS MUDAR DE POSIÇÃO===================*/
-.bannerCere {
-    background: #fbf3de;
-    display: flex;
-    align-items: center;
-
-}
-
-.bannerCere h1 {
-    font-family: "Palanquin Dark", sans-serif;
-    text-align: center;
-    font-size: 4rem;
-    font-weight: bold;
-    padding: 15vw;
-    color: #235158;
-
-}
-
-.SVG {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    margin: 4vw auto;
-}
-
-.textoCima {
-    display: block;
-    text-align: center;
-    margin: 2vw 10vw;
-}
-
-.conteudoCere {
-    display: flex;
-
-}
-
-.imgDiv1 {
-    flex: 1;
-    width: 100%;
-}
-
-.imgDiv {
-    flex: 1;
-    max-width: 100%;
-    width: 100%;
-}
-
-
-.area {
-    background: none;
-    pointer-events: all;
-    fill: transparent;
-    cursor: pointer;
-}
-
-#botoes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.bot {
-    background: #92C7CF;
-    border: none;
-    border-radius: 20px;
-    margin: 1vw;
-    padding: 15px 20px;
-    color: #12383d;
-    cursor: pointer;
-}
-
-#infoC2,
-#infoC1 {
-    max-width: 300px;
-    margin-left: 40px;
-    background: #AAD7D9;
-    border: 1px solid #0d2f33;
-    border-radius: 20px;
-    padding: 2vw 2.5vw;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-#infoC2 h1,
-#infoC1 h1 {
-    font-size: 2rem;
-    text-align: center;
-    color: #235158;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #235158;
-}
-
-#infoC2,
-#infoC1 div {
-    flex: 1;
-    color: #000;
-    font-size: 1.9rem;
-}
-
-#textoC1,
-#textoC2 {
-    padding: 20px;
-    display: block;
-    border: none;
-}
-
-.area:hover {
-    cursor: pointer;
-    fill: #AAD7D9;
-    /* destaque ao passar o mouse */
-    opacity: 0.5;
-}
-
-#textoC2 ul li:first-child {
-    margin-bottom: 2vw;
-    list-style-type: none;
-}
-
-#textoC2 ul {
-    list-style-type: disc !important;
-    /* Define bolinhas */
-    padding-left: 20px !important;
-
-}
-
-#textoC2 li {
-    line-height: 2.5rem;
-    margin-bottom: 6px;
-    /* Espaço entre os itens da lista */
-}
-
-[class^="toggle"] {
-    fill: #12383d !important;
-
-}
-
-/*=================SVG CEREBRO DPS MUDAR DE POSIÇÃO===================*/
 
 /*---header---*/
 header{
@@ -197,58 +58,6 @@ header ul li a:hover {
 
 
 
-
-/*----------------------CAMINHO----------------------*/
-
-
-/* Resetando estilos padrão */
-
-.neurocaminhos {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f9;
-}
-
-.containercaminho {
-    display: flex;
-    position: relative;
-    /* Permite a sobreposição absoluta dentro deste contêiner */
-}
-
-.sidebar {
-    margin: 4vw;
-}
-
-
-
-.imagem-cerebro {
-    position: relative;
-    /* Permite a sobreposição da seta */
-}
-
-.base {
-    width: 700px;
-    /* Ajuste o tamanho da imagem do cérebro conforme necessário */
-    height: auto;
-}
-
-.overlay {
-    position: absolute;
-    /* Posição absoluta para sobrepor sobre a imagem do cérebro */
-    top: 0;
-    left: 0;
-    width: 100%;
-    /* Ajuste o tamanho da seta para cobrir a imagem */
-    height: 100%;
-    /* Ajuste o tamanho da seta */
-    pointer-events: none;
-    /* Para garantir que os botões possam ser clicados */
-    display: none;
-    /* A seta ficará oculta inicialmente */
-}
 
 /*---introducao---*/
 .introducao {
@@ -1029,8 +838,25 @@ footer a span:hover {
     /* A seta ficará oculta inicialmente */
 }
 
-
-
+.ref{
+    margin: 2vw 4vw;
+}
+.ref h1 {
+    font-family: "Palanquin Dark", sans-serif;
+    margin: 2vw 0;
+    font-size: 3rem;
+    color: #235158;
+    
+}
+.ref ul {
+    list-style-type: disc;
+}
+.ref li {
+    margin: 2vw;
+}
+.ref li p {
+    
+}
 
 /*------------CELULAR----------------*/
 
