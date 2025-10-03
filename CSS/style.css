@@ -1,7 +1,14 @@
 /*---geral---*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 body {
     background: #FFF2EF;
+     max-width: 100vw;
+      overflow-x: hidden;
 
 }
 
@@ -15,7 +22,6 @@ div h2 {
     background: #AAD7D9;
     border-radius: 25px;
     margin: 1vw auto;
-    width: 20vw;
     padding: 1.5vw 4vw;
 
 }
@@ -70,7 +76,7 @@ h2 {
 
 .imgDiv1 {
     flex: 1;
-    width: 150%;
+    width: 100%;
 }
 
 .imgDiv {
@@ -172,11 +178,13 @@ h2 {
 /*=================SVG CEREBRO DPS MUDAR DE POSIÇÃO===================*/
 
 /*---header---*/
+header{
+  background: #AAD7D9;
+}
 header nav {
-    background: #AAD7D9;
+  
     display: flex;
     justify-content: space-between;
-    padding: 1vw 8vw;
     align-items: center;
 
 }
@@ -192,7 +200,7 @@ header ul li a {
     color: #235158;
     font-size: 1.5rem;
     background: #F0EDE2;
-    padding: 10px 35px;
+    padding: 20px 40px;
     border-radius: 50px;
     border: 2px solid #235158;
     display: inline-block;
@@ -436,8 +444,8 @@ p.norm {
 }
 
 iframe {
-    width: 160%;
-    height: 120%;
+    width: 100%;
+    height: auto;
 }
 
 .estruturacerebro li {
@@ -462,7 +470,9 @@ iframe {
     padding: 30px 0;
     background-color: #92C7CF;
     color: white;
-    margin: 0 30vw;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
     font-family: "Palanquin Dark", sans-serif;
 }
 
@@ -623,12 +633,14 @@ iframe {
     color: #FBF9F1;
     font-family: "Palanquin Dark", sans-serif;
     font-size: 2.5rem;
-    margin: 0 35vw;
-    padding: 20px 0;
+    text-align: center;
     background-color: #92C7CF;
+    padding: 20px 40px;
     border-radius: 40px;
 }
-
+.vicios div.textoCerebro{
+    display: flex;
+}
 .vicios p {
     font-size: 2rem;
     margin: 0 19vw 4vw 17vw;
@@ -790,8 +802,9 @@ p.forte {
 .saida div.dicas {
     background: #AAD7D9;
     border-radius: 50px;
-    padding: 2vw 8vw;
-    width: 40%;
+    padding: 2vw 5vw;
+    width: 80%;
+     box-sizing: border-box;
     margin: auto;
 }
 
@@ -857,6 +870,16 @@ footer a span:hover {
 /*------------CELULAR----------------*/
 
 @media screen and (max-width: 900px) {
+ 
+    header  img {
+     width: 90%;
+
+    }
+     header nav ul li a {
+        font-size: 1rem;
+        padding: 10px;
+     }
+
 
     /*---introducao---*/
     .introducao {
@@ -1015,14 +1038,17 @@ footer a span:hover {
     .umTres,
     .quatroSeis,
     .seteNove {
-        max-width: 320px;
+        display: block;
+        justify-content: center;
+        margin: 0 auto;
     }
 
     .neuros {
-        width: 35%;
-
+        width: 40%;
     }
-
+    .neuros img {
+        width: 40%;
+    }
     .neuros h3 {
         padding: 2vw;
         font-size: 1.2rem;
@@ -1041,14 +1067,17 @@ footer a span:hover {
     .vicios h2 {
         font-size: 1.5rem;
         padding: 20px 10px;
-        margin: 0 20vw;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
     }
       .vicios div.conteudo ul {
         margin: 4vw 5vw;
       }
     .vicios div.conteudo li{
         padding: 3vw;
-        max-width: max-content;
+        max-width: 90%;
+        word-wrap: break-word;
         font-size: 1.5rem;
         margin: 2vw;
       
@@ -1074,7 +1103,8 @@ footer a span:hover {
        
     }
     .fundo img {
-        margin: 2vw 20vw;
+        margin: 2vw auto;
+        display: block;
     }
     .fundo h3{
         font-size: 1.8rem;
@@ -1085,7 +1115,12 @@ footer a span:hover {
     }
 
 
-
+    .outros h2 {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 2rem;
+        padding: 2vw 4vw;
+    }
     .outros p {
         font-size: 1.2rem;
         line-height: 1.5rem;
@@ -1094,8 +1129,9 @@ footer a span:hover {
         display: block;
     }
     .outros div img{
-        width: 60%;
-        margin: 2vw 10vw;
+        width: 80%;
+        margin: 2vw auto;
+        display: block;
     }
     
 
@@ -1117,6 +1153,7 @@ footer a span:hover {
     }
     .saida div.dicas ol li{
         font-size: 1.2rem;
-        max-width: max-content;
+        max-width: 100%;
+        word-wrap: break-word;
     }
 }
