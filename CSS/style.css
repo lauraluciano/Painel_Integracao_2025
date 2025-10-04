@@ -3,6 +3,10 @@
 *::before,
 *::after {
     box-sizing: border-box;
+
+  -webkit-tap-highlight-color: transparent; /* Chrome/Safari Android/iOS */
+  -webkit-focus-ring-color: transparent;   /* iOS */
+  outline: none;                           /* remove contorno */
 }
 
 body {
@@ -250,9 +254,11 @@ p.norm {
 
 iframe {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
-
+.sketchfab-embed-wrapper{
+    width: 25%;
+}
 .estruturacerebro li {
     font-size: 2rem;
     color: #235158;
@@ -542,60 +548,60 @@ p.forte {
 
 .outros .compras-porno,
 .outros .celular-sexo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;             
-  margin-bottom: 2rem;
-  align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    align-items: flex-start;
 }
 
 .cadaOutro {
-  background-color: #92C7CF;
-  border-radius: 20px;
-  width: 280px;          
-  padding: 1rem;
-  transition: transform 0.3s ease;
+    background-color: #92C7CF;
+    border-radius: 20px;
+    width: 280px;
+    padding: 1rem;
+    transition: transform 0.3s ease;
 }
 
 .cadaOutro:hover {
-  transform: translateY(-8px);
+    transform: translateY(-8px);
 }
 
 .cadaOutro img {
-  width: 60%;
-  margin: 0 auto;
-  display: block;
-  border-bottom: 2px solid #235158;
-  padding-bottom: .5rem;
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    border-bottom: 2px solid #235158;
+    padding-bottom: .5rem;
 }
 
 .cadaOutro h3 {
-  font-size: 1.3rem;
-  text-align: center;
-  color: #235158;
-  font-family: "Palanquin Dark", sans-serif;
-  margin: .8rem 0;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #235158;
+    font-family: "Palanquin Dark", sans-serif;
+    margin: .8rem 0;
 }
 
 .cadaOutro h3:hover {
-  color: #0d2f33;
-  transform: scale(1.05);
-  transition: .2s;
+    color: #0d2f33;
+    transform: scale(1.05);
+    transition: .2s;
 }
 
 .cadaOutro summary {
-  list-style: none;
-  cursor: pointer;
+    list-style: none;
+    cursor: pointer;
 }
 
 .cadaOutro details p {
-  max-width: 90%;
-  margin: 1rem auto;
-  text-align: left;
-  font-size: 1.2rem;
-  font-family: "Baloo 2", sans-serif;
-  color: #0d2f33;
+    max-width: 90%;
+    margin: 1rem auto;
+    text-align: left;
+    font-size: 1.2rem;
+    font-family: "Baloo 2", sans-serif;
+    color: #0d2f33;
 }
 
 .saida {
@@ -750,21 +756,21 @@ footer a span:hover {
 .bot {
     background: #92C7CF;
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
     margin: 1vw;
     padding: 15px 20px;
     color: #12383d;
     cursor: pointer;
     font-family: "Sarabun", sans-serif;
     font-size: 1.5rem;
-    font-weight: bold;
-    border: 2px solid #0d2f33;
+    font-weight: bolder;
+
 }
 
-.bot:hover{
+.bot:hover {
     transform: scale(1.1);
     transition: .2s;
-    
+
 }
 
 #infoC2,
@@ -830,11 +836,22 @@ footer a span:hover {
     /* Espaço entre os itens da lista */
 }
 
-[class^="toggle"] {
-    fill: #12383d !important;
-
+.toggledC1Telencefalo,
+.toggledC1Tronco,
+.toggledC1Cerebelo,
+.toggledC1Sistema {
+    fill: #12383d85;
+    stroke: #235158;
+  stroke-width: 2px;
 }
-
+.toggledC2Frontal, 
+.toggledC2Parietal,
+.toggledC2Temporal,
+.toggledC2Occipital{
+      fill: #12383d85;
+    stroke: #235158;
+  stroke-width: 2px;
+}
 /*=================SVG CEREBRO DPS MUDAR DE POSIÇÃO===================*/
 /*----------------------CAMINHO----------------------*/
 
@@ -930,12 +947,13 @@ footer a span:hover {
         width: 90%;
     }
 
-    header  ul li a {
+    header ul li a {
         font-size: 1rem;
-    
+
         padding: 10px 15px;
         width: 80%;
     }
+
     .nav-item {
         display: none;
     }
@@ -949,6 +967,7 @@ footer a span:hover {
         border: none;
         cursor: pointer;
     }
+
     .mobile-menu ul {
         display: flex;
         flex-direction: column;
@@ -1079,7 +1098,9 @@ footer a span:hover {
         flex-direction: column;
         align-items: center;
     }
-
+     .sketchfab-embed-wrapper{
+        width: 50%;
+     }
     iframe {
         width: 100%;
         height: auto;
