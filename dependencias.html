@@ -14,56 +14,56 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Palanquin+Dark:wght@400;500;600;700&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
- <script src="js/menu.js"></script>
+    <script src="js/menu.js"></script>
     <script src="https://kit.fontawesome.com/503e616a76.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-   <header>
+    <header>
         <div class="menu">
-        <nav>
-            <div class="logo">
-                <a href="index.html"><img src="SRC/LogoSynapse.png" alt="Logo do grupo" class="Logo"></a>
-            </div>
-            <div>
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="SRC/LogoSynapse.png" alt="Logo do grupo" class="Logo"></a>
+                </div>
+                <div>
+                    <ul class="nav-item">
+                        <li>
+                            <a href="index.html">Início</a>
+                            <ul>
+                                <li>
+                                    <a href="dependencias.html">Dependências</a>
+                                </li>
+                                <li>
+                                    <a href="referencias.html">Referências</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="cerebro.html">Mapa Cérebro</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-mobile-icon">
+                    <button onclick="menuShow()"> <img class="icon" src="SRC/menuAberto.png"></button>
+                </div>
+            </nav>
+            <div class="mobile-menu">
                 <ul class="nav-item">
                     <li>
                         <a href="index.html">Inicio</a>
-                        <ul>
-                            <li>
-                                <a href="dependencias.html">Dependências</a>
-                            </li>
-                            <li>
-                                <a href="referencias.html">Referências</a>
-                            </li>
-                        </ul>
+                    </li>
+                    <li>
+                        <a href="dependencias.html">Dependências</a>
+                    </li>
+                    <li>
+                        <a href="referencias.html">Referências</a>
                     </li>
                     <li>
                         <a href="cerebro.html">Mapa Cérebro</a>
                     </li>
                 </ul>
             </div>
-            <div class="menu-mobile-icon">
-                <button onclick="menuShow()"> <img class="icon" src="SRC/menuAberto.png"></button>
-            </div>
-        </nav>
-        <div class="mobile-menu">
-            <ul class="nav-item">
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="dependencias.html">Dependências</a>
-                </li>
-                <li>
-                    <a href="referencias.html">Referências</a>
-                </li>
-                <li>
-                    <a href="cerebro.html">Mapa Cérebro</a>
-                </li>
-            </ul>
-        </div>
         </div>
     </header>
     <main>
@@ -229,136 +229,101 @@
             <p class="forte">Podemos listar vários comportamentos que se tornam compulsões:</p>
             <div>
 
-                <ul>
-                    <div>
-                        <li>
-                            <details>
-                                <summary>
-                                    
-                                    <img src="SRC/compras.png" alt="imagem sobre compras">
-                                    
-                                    <h3>Compras<span class="fa-solid fa-chevron-down"></span></h3>
-                                </summary>
-                                <p>
-                                    Diferentemente da dependência química, aqui as consequências sociais prevalecem.
-                                    Um
-                                    jogador
-                                    ou comprador compulsivo se endivida e, por vezes, pode perder itens que
-                                    demoraram
-                                    anos
-                                    para
-                                    serem conquistados para pagar dívidas.
-                                </p>
-                            </details>
-
-                        </li>
-
-                        <li>
-
-                            <details>
-                                <summary>
-                                    
-                                    <img src="SRC/jogos.png" alt="Ilustração compras">
-                                    
-                                    <h3>Jogos de azar<span class="fa-solid fa-chevron-down"></span></h3>
-                                </summary>
-                                <p>
-                                    Os jogos de azar (jogos imprevisíveis em que o jogador pode ter um grande ganho ou
-                                    uma perda
-                                    qualquer momento) engajam o jogador, na esperança de obter a próxima grande
-                                    recompensa.
-                                    Além disso, jogos de azar são geralmente patrocinados por influenciadores gigantes e
-                                    se
-                                    utilizam de técnicas visuais e sonoras para chamar atenção. Muitos videogames também
-                                    usam mecânicas parecidas com jogos de azar para manter os jogadores viciados,
-                                    comprando
-                                    e apoiando o projeto (como lootboxes e videogames gacha).
-                                </p>
-                            </details>
-
-                        </li>
-
-                        <li>
-
-                            <details>
-                                <summary>
-                                    
-                                    <img src="SRC/filme.png" alt="Ilustração pornografia">
-                                    
-                                    <h3>Pornografia<span class="fa-solid fa-chevron-down"></span></h3>
-                                </summary>
-                                <p>
-                                    Pessoas viciadas em pornografia relatam ter uma certa distorção de imagem, esperando
-                                    se
-                                    relacionar com pessoas que tenham corpos similares aos dos conteúdos que assistem.
-                                    Além
-                                    disso, o efeito da dopamina após o consumo de pornografia pode durar até 10 horas no
-                                    cérebro.
-                                </p>
-                            </details>
-
-                        </li>
+                <div class="compras-porno">
+                    <div class="cadaOutro">
+                        <details>
+                            <summary>
+                                <img src="SRC/compras.png" alt="imagem sobre compras">
+                                <h3>Compras <span class="fa-solid fa-chevron-down"></span></h3>
+                            </summary>
+                            <p>
+                                Diferentemente da dependência química, aqui as consequências sociais prevalecem.
+                                Um jogador ou comprador compulsivo se endivida e, por vezes, pode perder itens que
+                                demoraram anos para serem conquistados para pagar dívidas.
+                            </p>
+                        </details>
                     </div>
 
-                    <div>
-                        <li>
-                            <details>
-                                <summary>
-                                    
-                                    <img src="SRC/celular.png" alt="Ilustração uso de telas">
-                                    
-                                    <h3>Uso de Telas<span class="fa-solid fa-chevron-down"></span></h3>
-                                </summary>
-                                <p>
-                                    Em casos de uso de tela, você, aos poucos, vai perdendo o esforço em certos
-                                    quesitos, prefere informações rápidas ao invés de pesquisar, não estuda questões
-                                    sociais e políticas, pois tem preguiça (e, consequentemente, não sabe quem é e o que
-                                    apoia na hora de apertar botões nas urnas), deixa-se levar por qualquer tendência,
-                                    segue qualquer influenciador. A falta de pensamento crítico é cada vez mais comum na
-                                    sociedade. Por meio da dependência de telas, que traz informações rápidas a cada
-                                    minuto, adquirimos preguiça de querer pensar individualmente, preguiça de sermos
-                                    seres próprios e autênticos. 
-                                </p>
-                            </details>
-                        </li>
-
-                        <li>
-                            <details>
-                                <summary>
-                                    
-                                    <img src="SRC/salada.png" alt="Ilustração TA">
-                                    
-                                    <h3>Transtornos Alimentares<span class="fa-solid fa-chevron-down"></span></h3>
-                                </summary>
-                                <p>
-                                    A relação com a comida de muitas pessoas pode variar entre uma restrição excessiva
-                                    de calorias, até compulsão de muitos alimentos e ciclos entre esses dois estados. O
-                                    cérebro age como se essa relação com a comida fosse a única forma de aliviar seus
-                                    sentimentos, seja para emagrecer e “ficar mais bonito” ou comer para se sentir
-                                    aliviado.
-                                </p>
-                            </details>
-                        </li>
-
-                        <li>
-                            <details>
-                                <summary>
-
-                                    <img src="SRC/coracao.png" alt="Ilustração sexo">
-                                    
-                                    <h3>Sexo<span class="fa-solid fa-chevron-down"></span></h3>
-                                </summary>
-                                <p>
-                                    A compulsão sexual/vício em sexo ou masturbação não se trata de libido alta, mas da
-                                    busca dos sentimentos bons que o orgasmo traz, que no fim, apenas leva ao vazio e um
-                                    “falso prazer”. Este pode ser um sintoma do Transtorno do Comportamento Sexual
-                                    Compulsivo, que envolve fantasias intensas e que consomem um tempo excessivo do seu
-                                    dia, se tornando uma relação não-saudável com o sexo.
-                                </p>
-                            </details>
-                        </li>
+                    <div class="cadaOutro">
+                        <details>
+                            <summary>
+                                <img src="SRC/jogos.png" alt="Ilustração jogos">
+                                <h3>Jogos de azar <span class="fa-solid fa-chevron-down"></span></h3>
+                            </summary>
+                            <p>
+                                Os jogos de azar engajam o jogador na esperança de obter a próxima grande
+                                recompensa. Além disso, jogos de azar são geralmente patrocinados por influenciadores
+                                gigantes e se utilizam de técnicas visuais e sonoras para chamar atenção.
+                            </p>
+                        </details>
                     </div>
-                </ul>
+
+                    <div class="cadaOutro">
+                        <details>
+                            <summary>
+                                <img src="SRC/filme.png" alt="Ilustração pornografia">
+                                <h3>Pornografia <span class="fa-solid fa-chevron-down"></span></h3>
+                            </summary>
+                            <p>
+                                Pessoas viciadas em pornografia relatam ter distorção de imagem, esperando
+                                se relacionar com corpos irreais. Além disso, o efeito da dopamina pode durar
+                                até 10 horas no cérebro.
+                            </p>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="celular-sexo">
+                    <div class="cadaOutro">
+                        <details>
+                            <summary>
+                                <img src="SRC/celular.png" alt="Ilustração uso de telas">
+                                <h3>Uso de Telas <span class="fa-solid fa-chevron-down"></span></h3>
+                            </summary>
+                            <p>Em casos de uso de tela, você, aos poucos, vai perdendo o esforço em certos
+                            quesitos, prefere informações rápidas ao invés de pesquisar, não estuda questões
+                            sociais e políticas, pois tem preguiça (e, consequentemente, não sabe quem é e o
+                            que
+                            apoia na hora de apertar botões nas urnas), deixa-se levar por qualquer
+                            tendência,
+                            segue qualquer influenciador. A falta de pensamento crítico é cada vez mais
+                            comum na
+                            sociedade. Por meio da dependência de telas, que traz informações rápidas a cada
+                            minuto, adquirimos preguiça de querer pensar individualmente, preguiça de sermos
+                            seres próprios e autênticos. .</p>
+                        </details>
+                    </div>
+
+                    <div class="cadaOutro">
+                        <details>
+                            <summary>
+                                <img src="SRC/salada.png" alt="Ilustração TA">
+                                <h3>Transtornos Alimentares <span class="fa-solid fa-chevron-down"></span></h3>
+                            </summary>
+                            <p> A relação com a comida de muitas pessoas pode variar entre uma restrição excessiva
+                            de calorias, até compulsão de muitos alimentos e ciclos entre esses dois estados. O
+                            cérebro age como se essa relação com a comida fosse a única forma de aliviar seus
+                            sentimentos, seja para emagrecer e “ficar mais bonito” ou comer para se sentir
+                            aliviado.</p>
+                        </details>
+                    </div>
+
+                    <div class="cadaOutro">
+                        <details>
+                            <summary>
+                                <img src="SRC/coracao.png" alt="Ilustração sexo">
+                                <h3>Sexo <span class="fa-solid fa-chevron-down"></span></h3>
+                            </summary>
+                            <p>A compulsão sexual/vício em sexo ou masturbação não se trata de libido alta, mas da
+                            busca dos sentimentos bons que o orgasmo traz, que no fim, apenas leva ao vazio e um
+                            “falso prazer”. Este pode ser um sintoma do Transtorno do Comportamento Sexual
+                            Compulsivo, que envolve fantasias intensas e que consomem um tempo excessivo do seu
+                            dia, se tornando uma relação não-saudável com o sexo.</p>
+                        </details>
+                    </div>
+                </div>
+
+            </div>
 
             </div>
             </ul>
@@ -431,7 +396,7 @@
             </div>
         </section>
     </main>
-      <footer>
+    <footer>
         <div>
             <h3>Nome do grupo</h3>
 

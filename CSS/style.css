@@ -540,58 +540,62 @@ p.forte {
     font-weight: bold;
 }
 
-.outros li {
-    background-color: #92C7CF;
-    margin: 2vw;
+.outros .compras-porno,
+.outros .celular-sexo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;             
+  margin-bottom: 2rem;
+  align-items: flex-start;
 }
 
-/*.outros div{
-    display: flex;
-} fica bugando*/
-
-.outros div ul li {
-    margin: 2vw 10vw;
-    max-width: 30%;
-    border-radius: 20px;
+.cadaOutro {
+  background-color: #92C7CF;
+  border-radius: 20px;
+  width: 280px;          
+  padding: 1rem;
+  transition: transform 0.3s ease;
 }
 
-.outros div img {
-    width: 40%;
-    margin: 2vw 2vw 2vw 6vw;
-    border-bottom: 1px solid #235158;
+.cadaOutro:hover {
+  transform: translateY(-8px);
 }
 
-.outros div.img img {
-    margin: 0 auto;
+.cadaOutro img {
+  width: 60%;
+  margin: 0 auto;
+  display: block;
+  border-bottom: 2px solid #235158;
+  padding-bottom: .5rem;
 }
 
-.outros h3 {
-    font-size: 1.5rem;
-    text-align: center;
-    color: #235158;
-    font-family: "Palanquin Dark", sans-serif;
-    padding: 1vw 0 3vw 0;
+.cadaOutro h3 {
+  font-size: 1.3rem;
+  text-align: center;
+  color: #235158;
+  font-family: "Palanquin Dark", sans-serif;
+  margin: .8rem 0;
 }
 
-
-.outros h3:hover {
-    color: #0d2f33;
-    transform: scale(1.05);
-    transition: .2s;
+.cadaOutro h3:hover {
+  color: #0d2f33;
+  transform: scale(1.05);
+  transition: .2s;
 }
 
-.outros summary {
-    list-style: none;
-    cursor: pointer;
+.cadaOutro summary {
+  list-style: none;
+  cursor: pointer;
 }
 
-.outros details p {
-    max-width: 85%;
-    margin: 15px auto;
-    text-align: left;
-    font-size: 1.2rem;
-    font-family: "Baloo 2", sans-serif;
-    color: #0d2f33;
+.cadaOutro details p {
+  max-width: 90%;
+  margin: 1rem auto;
+  text-align: left;
+  font-size: 1.2rem;
+  font-family: "Baloo 2", sans-serif;
+  color: #0d2f33;
 }
 
 .saida {
@@ -751,17 +755,28 @@ footer a span:hover {
     padding: 15px 20px;
     color: #12383d;
     cursor: pointer;
+    font-family: "Sarabun", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 2px solid #0d2f33;
+}
+
+.bot:hover{
+    transform: scale(1.1);
+    transition: .2s;
+    
 }
 
 #infoC2,
 #infoC1 {
-    max-width: 300px;
+    max-width: 400px;
     margin-left: 40px;
     background: #AAD7D9;
-    border: 1px solid #0d2f33;
+    border: 2px solid #0d2f33;
     border-radius: 20px;
-    padding: 2vw 2.5vw;
+    padding: 1.5vw 1.5vw;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    height: fit-content;
 }
 
 #infoC2 h1,
@@ -771,13 +786,16 @@ footer a span:hover {
     color: #235158;
     padding-bottom: 20px;
     border-bottom: 1px solid #235158;
+    font-family: "Palanquin Dark", sans-serif;
 }
 
 #infoC2,
 #infoC1 div {
     flex: 1;
-    color: #000;
-    font-size: 1.9rem;
+    color: #0d2f33;
+    font-size: 1.5rem;
+    font-family: "Sarabun", sans-serif;
+
 }
 
 #textoC1,
