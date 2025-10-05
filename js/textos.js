@@ -6,41 +6,21 @@ const dadosCerebro1 = {
   telencefalo: {
     titulo: "Telencéfalo",
     texto:
-    [
-      "Responsável por:",
-      "Processamento de informações complexas;",
-      "Comportamento consciente;",
-      "Tomada de decisões."
-    ]
+     ["Processamento de informações complexas", "Comportamento consciente", "Tomada de decisões"]
   },
   sistema: {
     titulo: "Sistema Límbico",
     texto:
-    [
-      "Responsável por:",
-      "Processamento de emoções;",
-      "Memória e comportamento."
-    ]
+    ["Processamento de emoções", "Memória e comportamento"]
   },
   cerebelo: {
     titulo: "Cerebelo",
     texto:
-    [
-      "Responsável por:",
-      "Coordenação motora;",
-      "Equilíbrio;",
-      "Postura."
-    ]
+    ["Coordenação motora", "Equilíbrio", "Postura"]
   },
   tronco: {
     titulo: "Tronco Encefálico",
     texto: ["Funções vitais como respiração", "Batimentos cardíacos", "Sono"]
-    [
-      "Responsável por:",
-      "Funções vitais como respiração;",
-      "Batimentos cardíacos;",
-      "Sono."
-    ]
   }
 }
 
