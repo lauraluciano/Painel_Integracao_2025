@@ -814,8 +814,23 @@ footer a span:hover {
 .area:hover {
     cursor: pointer;
     fill: #AAD7D9;
-    /* destaque ao passar o mouse */
     opacity: 0.5;
+}
+
+#textoC1 ul li:first-child {
+    margin-bottom: 2vw;
+    list-style-type: none;
+}
+
+#textoC1 ul {
+    list-style-type: disc !important;
+    padding-left: 20px !important;
+
+}
+
+#textoC1 li {
+    line-height: 2.5rem;
+    margin-bottom: 6px;
 }
 
 #textoC2 ul li:first-child {
@@ -825,7 +840,6 @@ footer a span:hover {
 
 #textoC2 ul {
     list-style-type: disc !important;
-    /* Define bolinhas */
     padding-left: 20px !important;
 
 }
@@ -833,7 +847,6 @@ footer a span:hover {
 #textoC2 li {
     line-height: 2.5rem;
     margin-bottom: 6px;
-    /* Espaço entre os itens da lista */
 }
 
 .toggledC1Telencefalo,
@@ -857,6 +870,24 @@ footer a span:hover {
 
 
 /* Resetando estilos padrão */
+
+.neurocaminho{
+    padding: 5vw;
+}
+
+.neurocaminho div.titulo{
+    padding: 0 30vw;
+}
+
+.neurocaminho h2{
+    color: #235158;
+    font-family: "Palanquin Dark", sans-serif;
+    font-size: 2.5rem;
+    border-bottom: 2px solid #235158;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+}
 
 .neurocaminhos {
     font-family: Arial, sans-serif;

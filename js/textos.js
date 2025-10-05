@@ -5,19 +5,42 @@
 const dadosCerebro1 = {
   telencefalo: {
     titulo: "Telencéfalo",
-    texto: ["Processamento de informações complexas", "Comportamento consciente", "Tomada de decisões"]
+    texto:
+    [
+      "Responsável por:",
+      "Processamento de informações complexas;",
+      "Comportamento consciente;",
+      "Tomada de decisões."
+    ]
   },
   sistema: {
     titulo: "Sistema Límbico",
-    texto: ["Processamento de emoções", "Memória e comportamento"]
+    texto:
+    [
+      "Responsável por:",
+      "Processamento de emoções;",
+      "Memória e comportamento."
+    ]
   },
   cerebelo: {
     titulo: "Cerebelo",
-    texto: ["Coordenação motora", "Equilíbrio", "Postura"]
+    texto:
+    [
+      "Responsável por:",
+      "Coordenação motora;",
+      "Equilíbrio;",
+      "Postura."
+    ]
   },
   tronco: {
     titulo: "Tronco Encefálico",
     texto: ["Funções vitais como respiração", "Batimentos cardíacos", "Sono"]
+    [
+      "Responsável por:",
+      "Funções vitais como respiração;",
+      "Batimentos cardíacos;",
+      "Sono."
+    ]
   }
 }
 
@@ -33,7 +56,7 @@ const dadosCerebro2 = {
       "Controlar habilidades motoras;",
       "Processos intelectuais (falar, pensar etc.);",
       "Expressões faciais e gestos com os braços;",
-      "Expressão dos sentimentos;"
+      "Expressão dos sentimentos."
     ]
   },
   parietal: {
