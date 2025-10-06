@@ -6,21 +6,21 @@ const dadosCerebro1 = {
   telencefalo: {
     titulo: "Telencéfalo",
     texto:
-     ["Processamento de informações complexas", "Comportamento consciente", "Tomada de decisões"]
+     ["Composta por três principais estruturas, o telencéfalo é a maior e mais complexa parte do cérebro. A primeira parte é o córtex cerebral, feito de uma massa cinzenta, onde ficam a maior parte dos neurônios, responsável por funções como pensamento e percepção. Abaixo dele fica a substância branca, composta por axônios, que conectam áreas do cérebro e a medula espinhal. Também abaixo do córtex temos estruturas subcorticais, como tálamo, hipotálamo, hipocampo, amígdalas e gânglios da base."]
   },
   sistema: {
     titulo: "Sistema Límbico",
     texto:
-    ["Processamento de emoções", "Memória e comportamento"]
+    ["O sistema límbico é um conjunto de estruturas cerebrais que regulam emoções, comportamentos, dentre outros. As suas estruturas envolvem amígdala, que processa emoções, hipocampo, que ajuda na formação de novas memórias e memórias espaciais, hipotálamo, que regula hormônios, humor e sensações como sede e fome; tálamo, que encaminha informações sensoriais para o córtex (exceto o olfato)."]
   },
   cerebelo: {
     titulo: "Cerebelo",
     texto:
-    ["Coordenação motora", "Equilíbrio", "Postura"]
+    ["O cerebelo, localizado abaixo do tronco encefálico, ajuda no equilíbrio corporal, coordenação motora, controle do tônus muscular, precisão e suavidade de movimentos."]
   },
   tronco: {
     titulo: "Tronco Encefálico",
-    texto: ["Funções vitais como respiração", "Batimentos cardíacos", "Sono"]
+    texto: ["O tronco encefálico, ou tronco cerebral, faz parte do sistema nervoso central, conectando o cérebro e a medula espinhal. Ele ajuda em funções essenciais para o corpo e é dividido em três partes: mesencéfalo, responsável por funções motoras e sensoriais; ponte, responsável por equilíbrio e sensibilidade da face; bulbo, que contém os centros respiratórios e cardiovasculares."]
   }
 }
 

@@ -694,6 +694,9 @@ footer a span:hover {
 }
 
 
+
+
+
 /*=================SVG CEREBRO DPS MUDAR DE POSIÇÃO===================*/
 .bannerCere {
     background: #fbf3de;
@@ -711,6 +714,13 @@ footer a span:hover {
     color: #235158;
 
 }
+
+.textoIntro p {
+    padding: 5vw;
+    text-align: center;
+    font-weight: 500;
+}
+
 
 .SVG {
     display: flex;
@@ -871,6 +881,7 @@ footer a span:hover {
     margin: 0 auto;
     text-align: center;
     display: inline-block;
+    line-height: 3vw;
 }
 
 .neurocaminhos {
@@ -883,41 +894,45 @@ footer a span:hover {
 }
 
 .containercaminho {
-    display: flex;
+   
     position: relative;
     /* Permite a sobreposição absoluta dentro deste contêiner */
 }
 
 .sidebar {
-    margin: 4vw;
+    margin: 4vw 4vw 4vw 0;
+     margin-left: 15vw;
 }
-
 
 
 .imagem-cerebro {
     position: relative;
     /* Permite a sobreposição da seta */
+    
 }
+
 
 .base {
     width: 700px;
     /* Ajuste o tamanho da imagem do cérebro conforme necessário */
     height: auto;
+   margin-left: 23vw;
 }
 
 .overlay {
     position: absolute;
     /* Posição absoluta para sobrepor sobre a imagem do cérebro */
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 30;
+    width: 500px;
     /* Ajuste o tamanho da seta para cobrir a imagem */
-    height: 100%;
+    height: 500px;
     /* Ajuste o tamanho da seta */
     pointer-events: none;
     /* Para garantir que os botões possam ser clicados */
     display: none;
     /* A seta ficará oculta inicialmente */
+    margin: 6vw 0 24vw 30vw;
 }
 
 /*referencias*/
