@@ -955,11 +955,10 @@ footer a span:hover {
 }
 
 .ref li {
-    margin: 2vw;
+    margin: 4vw;
 }
 
 .ref li p {
-
     color: #000;
     font-size: 1.5rem
 }
@@ -981,7 +980,7 @@ footer a span:hover {
         font-size: 1rem;
 
         padding: 10px 15px;
-        width: 80%;
+        width: 60%;
     }
 
     .nav-item {
@@ -1002,14 +1001,16 @@ footer a span:hover {
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding-bottom: 1rem;
+        padding-bottom: 2vw;
     }
 
     .mobile-menu .nav-item {
         display: block;
-        padding-top: 1.2rem;
+        padding-top: 2vw;
     }
-
+        .mobile-menu .nav-item li {
+            margin: 2vw 0 ;
+        }
     .open {
         display: block;
     }
@@ -1324,6 +1325,7 @@ footer a span:hover {
         margin: 2vw 4vw;
         width: 80%;
     }
+    
 
     .SVG {
         display: block;
@@ -1340,7 +1342,9 @@ footer a span:hover {
         height: 90%;
         margin: 2vw;
     }
-
+     #botoes {
+        gap: 0;
+     }
     .textoCima {
         margin: 2vw 5vw;
     }
@@ -1348,6 +1352,7 @@ footer a span:hover {
     .textoCima p {
         font-size: 1.5rem;
     }
+
    /*------caminhos--------*/
 
     .neurocaminho div.titulo{
@@ -1368,11 +1373,11 @@ footer a span:hover {
         margin: 16vw 0 0 18vw;
     }
     .sidebar{
-        margin-left: 2vw;
+        margin-left: 8vw;
 
     }
 
-
+     
 
 
 

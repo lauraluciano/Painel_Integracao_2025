@@ -76,63 +76,52 @@ function atualizarInfoGenerico(id, dados, prefixoClasse) {
   const parte = dados[id];
   const svgPart = document.getElementById(id);
 
-
   if (!parte || !svgPart) {
     console.warn(`Nenhum dado encontrado para id=${id}`);
     return;
   }
 
-  // Remove todas as classes de destaque antes de aplicar a nova
+  // Seleciona o título e o texto do painel
+  const tituloEl = document.getElementById("titulo" + prefixoClasse);
+  const textoEl = document.getElementById("texto" + prefixoClasse);
 
+  // Define a classe de destaque
+  const className = "toggled" + prefixoClasse + id.charAt(0).toUpperCase() + id.slice(1);
 
+  // Verifica se o item já está ativo (antes de alterar)
+  const estavaAtivo = svgPart.classList.contains(className);
 
+  // Remove o destaque de todos antes de aplicar um novo
   Object.keys(dados).forEach(key => {
-
     const el = document.getElementById(key);
-
     if (el) {
-      el.classList.remove(  "toggled" + prefixoClasse + key.charAt(0).toUpperCase() + key.slice(1));
+      el.classList.remove("toggled" + prefixoClasse + key.charAt(0).toUpperCase() + key.slice(1));
     }
   });
 
-  // Define a classe de destaque correspondente
-
-
-
-  const className = "toggled" + prefixoClasse + id.charAt(0).toUpperCase() + id.slice(1); 
-
-
-  // Alterna a classe (ativa ou desativa)
-
-
-
-  const isActive = svgPart.classList.toggle(className); 
-
- const tituloEl=document.getElementById("titulo"+prefixoClasse);
- const textoEl = document.getElementById("texto"+prefixoClasse);
-
-
-  if (isActive) {
-    tituloEl.innerText = parte.titulo;
-
-    const ul = document.createElement("ul");
-    parte.texto.forEach(frase => {
-      const li = document.createElement("li");
-      li.innerText = frase;
-      ul.appendChild(li);
-    });
-
-
-    textoEl.innerHTML = "";
-    textoEl.appendChild(ul);
-  } else {
+  // Se o mesmo item for clicado novamente, limpa o texto e sai
+  if (estavaAtivo) {
     tituloEl.innerText = "";
     textoEl.innerHTML = "";
+    return;
   }
 
+  // Caso contrário, ativa o novo item
+  svgPart.classList.add(className);
 
-  
+  // Atualiza o conteúdo de texto
+  tituloEl.innerText = parte.titulo;
+  const ul = document.createElement("ul");
+  parte.texto.forEach(frase => {
+    const li = document.createElement("li");
+    li.innerText = frase;
+    ul.appendChild(li);
+  });
+
+  textoEl.innerHTML = "";
+  textoEl.appendChild(ul);
 }
+
 
 // 3. Inicializa os cliques nas áreas do SVG
 
