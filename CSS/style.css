@@ -881,7 +881,7 @@ footer a span:hover {
     margin: 0 auto;
     text-align: center;
     display: inline-block;
-    line-height: 3vw;
+    line-height: 3rem;
 }
 
 .neurocaminhos {
@@ -1348,4 +1348,50 @@ footer a span:hover {
     .textoCima p {
         font-size: 1.5rem;
     }
+   /*------caminhos--------*/
+
+    .neurocaminho div.titulo{
+        padding: 2vw;
+    }
+    .neurocaminho h2     {
+        margin: 2vw;
+        font-size: 2rem;
+    }
+    .base{
+        width: 90%;
+        height: 90%;
+        margin: 2vw;
+    }
+    .overlay{
+        width: 60%;
+        height: 60%;
+        margin: 16vw 0 0 18vw;
+    }
+    .sidebar{
+        margin-left: 2vw;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
 }
