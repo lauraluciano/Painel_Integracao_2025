@@ -103,6 +103,8 @@ function atualizarInfoGenerico(id, dados, prefixoClasse) {
   if (estavaAtivo) {
     tituloEl.innerText = "";
     textoEl.innerHTML = "";
+    document.getElementById("infoC1").classList.remove("visivel");
+    document.getElementById("infoC2").classList.remove("visivel");
     return;
   }
 
@@ -120,6 +122,9 @@ function atualizarInfoGenerico(id, dados, prefixoClasse) {
 
   textoEl.innerHTML = "";
   textoEl.appendChild(ul);
+
+  document.getElementById("infoC1").classList.add("visivel");
+  document.getElementById("infoC2").classList.add("visivel");
 }
 
 

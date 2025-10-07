@@ -4,9 +4,12 @@
 *::after {
     box-sizing: border-box;
 
-  -webkit-tap-highlight-color: transparent; /* Chrome/Safari Android/iOS */
-  -webkit-focus-ring-color: transparent;   /* iOS */
-  outline: none;                           /* remove contorno */
+    -webkit-tap-highlight-color: transparent;
+    /* Chrome/Safari Android/iOS */
+    -webkit-focus-ring-color: transparent;
+    /* iOS */
+    outline: none;
+    /* remove contorno */
 }
 
 body {
@@ -256,9 +259,11 @@ iframe {
     width: 100%;
     height: 100%;
 }
-.sketchfab-embed-wrapper{
+
+.sketchfab-embed-wrapper {
     width: 25%;
 }
+
 .estruturacerebro li {
     font-size: 2rem;
     color: #235158;
@@ -783,6 +788,18 @@ footer a span:hover {
 
 }
 
+/*#infoC2,
+#infoC1 {
+    max-width: 400px;
+    margin-left: 40px;
+    background: #AAD7D9;
+    border: 2px solid #0d2f33;
+    border-radius: 20px;
+    padding: 1.5vw 1.5vw;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}*/
+
 #infoC2,
 #infoC1 {
     max-width: 400px;
@@ -793,7 +810,17 @@ footer a span:hover {
     padding: 1.5vw 1.5vw;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
     height: fit-content;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
+
+#infoC2.visivel,
+#infoC1.visivel {
+    display: block;
+    opacity: 1;
+}
+
 
 #infoC2 h1,
 #infoC1 h1 {
@@ -849,31 +876,33 @@ footer a span:hover {
 .toggledC1Sistema {
     fill: #12383d85;
     stroke: #235158;
-  stroke-width: 2px;
+    stroke-width: 2px;
 }
-.toggledC2Frontal, 
+
+.toggledC2Frontal,
 .toggledC2Parietal,
 .toggledC2Temporal,
-.toggledC2Occipital{
-      fill: #12383d85;
+.toggledC2Occipital {
+    fill: #12383d85;
     stroke: #235158;
-  stroke-width: 2px;
+    stroke-width: 2px;
 }
+
 /*=================SVG CEREBRO DPS MUDAR DE POSIÇÃO===================*/
 /*----------------------CAMINHO----------------------*/
 
 
 /* Resetando estilos padrão */
 
-.neurocaminho{
+.neurocaminho {
     padding: 5vw;
 }
 
-.neurocaminho div.titulo{
+.neurocaminho div.titulo {
     padding: 0 30vw;
 }
 
-.neurocaminho h2{
+.neurocaminho h2 {
     color: #235158;
     font-family: "Palanquin Dark", sans-serif;
     font-size: 2.5rem;
@@ -894,21 +923,21 @@ footer a span:hover {
 }
 
 .containercaminho {
-   
+
     position: relative;
     /* Permite a sobreposição absoluta dentro deste contêiner */
 }
 
 .sidebar {
     margin: 4vw 4vw 4vw 0;
-     margin-left: 15vw;
+    margin-left: 15vw;
 }
 
 
 .imagem-cerebro {
     position: relative;
     /* Permite a sobreposição da seta */
-    
+
 }
 
 
@@ -916,7 +945,7 @@ footer a span:hover {
     width: 700px;
     /* Ajuste o tamanho da imagem do cérebro conforme necessário */
     height: auto;
-   margin-left: 23vw;
+    margin-left: 23vw;
 }
 
 .overlay {
@@ -1008,9 +1037,11 @@ footer a span:hover {
         display: block;
         padding-top: 2vw;
     }
-        .mobile-menu .nav-item li {
-            margin: 2vw 0 ;
-        }
+
+    .mobile-menu .nav-item li {
+        margin: 2vw 0;
+    }
+
     .open {
         display: block;
     }
@@ -1129,9 +1160,11 @@ footer a span:hover {
         flex-direction: column;
         align-items: center;
     }
-     .sketchfab-embed-wrapper{
+
+    .sketchfab-embed-wrapper {
         width: 50%;
-     }
+    }
+
     iframe {
         width: 100%;
         height: auto;
@@ -1148,7 +1181,7 @@ footer a span:hover {
 
     .neurotrans h2 {
         padding: 20px 15px;
-        margin: 2vw;
+        margin: 5vw;
         font-size: 1.5rem;
         margin: block;
     }
@@ -1177,16 +1210,16 @@ footer a span:hover {
     .seteNove {
         display: block;
         justify-content: center;
-        margin: 0 auto;
     }
 
     .neuros {
-        width: 40%;
-        margin: 2vw auto;
+        width: 70%;
+        margin: 15vw auto;
+        padding: 5vw;
     }
 
     .neuros img {
-        width: 40%;
+        width: 80%;
     }
 
     .neuros h3 {
@@ -1293,6 +1326,10 @@ footer a span:hover {
         border-radius: 200px;
     }
 
+    .saida p {
+        font-size: 1.6rem;
+    }
+
     .saida p.saida {
         font-size: 1.2rem;
         line-height: 1.5rem;
@@ -1300,7 +1337,8 @@ footer a span:hover {
     }
 
     .saida div.dicas {
-        width: 80%;
+        width: 90%;
+        padding: 5vw 10vw;
     }
 
     .saida div.dicas ol li {
@@ -1325,7 +1363,7 @@ footer a span:hover {
         margin: 2vw 4vw;
         width: 80%;
     }
-    
+
 
     .SVG {
         display: block;
@@ -1342,9 +1380,11 @@ footer a span:hover {
         height: 90%;
         margin: 2vw;
     }
-     #botoes {
+
+    #botoes {
         gap: 0;
-     }
+    }
+
     .textoCima {
         margin: 2vw 5vw;
     }
@@ -1353,31 +1393,34 @@ footer a span:hover {
         font-size: 1.5rem;
     }
 
-   /*------caminhos--------*/
+    /*------caminhos--------*/
 
-    .neurocaminho div.titulo{
+    .neurocaminho div.titulo {
         padding: 2vw;
     }
-    .neurocaminho h2     {
+
+    .neurocaminho h2 {
         margin: 2vw;
         font-size: 2rem;
     }
-    .base{
+
+    .base {
         width: 90%;
         height: 90%;
         margin: 2vw;
     }
-    .overlay{
+
+    .overlay {
         width: 60%;
         height: 60%;
         margin: 16vw 0 0 18vw;
     }
-    .sidebar{
+
+    .sidebar {
         margin-left: 8vw;
 
     }
 
-     
 
 
 
@@ -1393,7 +1436,8 @@ footer a span:hover {
 
 
 
- 
+
+
 
 
 
